@@ -1,6 +1,26 @@
-<footer>
-  <small>
-    This project is maintained by <a href="https://www.danurbanowicz.com">Dan Urbanowicz</a>.
-    Check out the <a href="{{ pkg.repository.url }}">GitHub repo</a>.
-  </small>
+<svg role="decorative" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+  <path fill="var(--secondary-green)" fill-opacity="1" d="M0,224L48,213.3C96,203,192,181,288,160C384,139,480,117,576,122.7C672,128,768,160,864,149.3C960,139,1056,85,1152,85.3C1248,85,1344,139,1392,165.3L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+</svg>
+<footer id="footer" class=" base-section footer">
+  <div class="container">
+    <form method="post" action="/" class="contact">
+      <fieldset>
+        <legend class="title-text h2"><span class="text-holder">Get in Touch</span></legend>
+        <label for="email">Email</label>
+        <input id="email" type="email" name="email" />
+        <label class="important" for="first">First Name</label>
+        <input class="important" id="first" type="text" name="first" />
+        <label for="message">Message</label>
+        <textarea name="message" id="message"></textarea>
+        <button class="btn">
+        Say hi</button>
+      </fieldset>
+    </form>
+    <nav aria-label="Footer navigation" class="footer-nav nav">
+      <ul>
+        <li><a href="/">Accessibility</a></li>
+        <li><a href="/">Email</a></li>
+        <li><a href="/">Contact</a></li>
+    </nav>
+  </div>
 </footer>

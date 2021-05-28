@@ -1,10 +1,35 @@
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width"/>
   <link rel="dns-prefetch" href="https://identity.netlify.com">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ renderData.title or title or metadata.title }}</title>
+  <meta name="twitter:site" content="@torkna"/>
+    <meta name="twitter:creator" content="@torkna"/>
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="title" content="{{ renderData.title or title or metadata.title }}"/>
+    <meta property="og:title" content="{{ renderData.title or title or metadata.title }}"/>
+    <meta name="twitter:title" content="{{ renderData.title or title or metadata.title }}"/>
+  <meta property="og:description" content="{{ metaDescription or renderData.metaDescription or metadata.description }}" />
+  <meta name="twitter:description" content="{{ metaDescription or renderData.metaDescription or metadata.description }}" />
   <meta name="description" content="{{ metaDescription or renderData.metaDescription or metadata.description }}">
-  <script async src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <meta property="og:image" content="https://torstenknabe.com/images/facebook-meta.jpg" />
+  <meta name="twitter:image" content="https://torstenknabe.com/images/twitter-meta.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@torkna" />
+  <meta name="twitter:site:id" content="266790419" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;600&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;1,200;1,300;1,400;1,600&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+  <link media="all" rel="stylesheet" href="css/style.css" />
+  <link rel="shortcut icon" href="images/tk-logo.svg" type="image/x-icon" />
+  <meta http-equiv="pragma" content="no-cache" />
+  <style>
+  /*Hide decorative SVGs if CSS doesn't load*/
+    svg[role="decorative"] {
+      display: none;
+    }
+  </style>
+    <script async src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   {% set css %}
     {% include "assets/css/inline.css" %}
   {% endset %}

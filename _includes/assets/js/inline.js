@@ -7,3 +7,13 @@ if (window.netlifyIdentity) {
     }
   });
 }
+  const menu = document.querySelector('.nav-btn');
+  const body = document.querySelector('body');
+  const handleToggle = () => body.classList.toggle('open-nav');
+
+  menu.onclick = () => handleToggle();
+  menu.addEventListener('keyup', (event) => {
+    if(event.keyCode === 13 || event.keyCode === 32) {
+      handleToggle();
+    }
+  });
