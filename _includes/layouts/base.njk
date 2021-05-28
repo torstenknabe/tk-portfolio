@@ -8,15 +8,15 @@
 			<div class="main-content">
 				<main id="main">
 					<div class="hero-container">
-						<h1 class="title-text"><span class="text-holder">{{ metadata.title }}</span></h1>
+						<h1 class="title-text"><span class="text-holder">{{ title }}</span></h1>
 					</div>
-					<section class="base-section">
-						<div class="container">
-							{{ layoutContent | safe }}
-						</div>
-					</section>
+
+						{{ layoutContent | safe }}
+
 				</main>		
+
 				{% include "components/footer.njk" %}
+
 			</div>
 			<div class="side-nav nav">
 				<header class="header-holder">
@@ -52,7 +52,9 @@
 						{# <a href="{{ '/' | url }}">{{ metadata.title }}</a> #}
 						<h2 class="h1">Torsten Knabe</h2>
 					</div>
+
 					{% include "components/nav.njk" %}
+					
 					<nav aria-label="Social Media Link Navigation" class="social-nav">
 						<ul class="styled-list">
 							<li><a href="https://twitter.com/torkna">

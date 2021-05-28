@@ -375,7 +375,7 @@ textarea {
 	background-position: center;
 	background-repeat: repeat;
 	background-color: var(--secondary-blue);
-	background-image: url("../images/hero-pattern-01.svg");
+	background-image: url("/static/img/hero-pattern-01.svg");
 	display: grid;
 	place-content: center;
 }
@@ -516,6 +516,11 @@ textarea {
 	height: 200px;
 	border: 8px solid var(--primary-blue);
 	object-fit: cover;
+}
+
+.content .container {
+	max-width: 40rem;
+	padding: 2rem;
 }
 
 .footer {
