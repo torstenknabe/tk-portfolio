@@ -3,7 +3,7 @@
 </svg>
 <footer id="footer" class=" base-section footer">
   <div class="container">
-    <form method="post" action="/" class="contact">
+    <form name="contact" method="POST" data-netlify="true" class="contact">
       <fieldset>
         <legend class="title-text h2"><span class="text-holder">Get in Touch</span></legend>
         <label for="email">Email</label>
@@ -12,15 +12,15 @@
         <input class="important" id="first" type="text" name="first" />
         <label for="message">Message</label>
         <textarea name="message" id="message"></textarea>
-        <button class="btn">
+        <button type="submit" class="btn">
         Say hi</button>
       </fieldset>
     </form>
     <nav aria-label="Footer navigation" class="footer-nav nav">
       <ul>
-        <li><a href="/">Accessibility</a></li>
-        <li><a href="/">Email</a></li>
-        <li><a href="/">Contact</a></li>
+        <li><a href="/accessibility">Accessibility</a></li>
+        <li><a href="mailto:torsten.knabe@gmail.com">Email</a></li>
+        <li><a href="/contact">Contact</a></li>
     </nav>
   </div>
 </footer>

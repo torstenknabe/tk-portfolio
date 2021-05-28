@@ -41,27 +41,27 @@ h1 {
   --fluid-type-min: 2.5rem;
   --fluid-type-max: 5rem;
   --fluid-type-target: 5vw;
-  max-width: 15ch;
+  /*max-width: 15ch;*/
 }
 
 h2,
 .h2 {
-  --fluid-type-min: 1.8rem;
+  --fluid-type-min: 1.3rem;
   --fluid-type-max: 3rem;
 }
 
 h3 {
-  --fluid-type-min: 1.5rem;
+  --fluid-type-min: 1.2rem;
   --fluid-type-max: 2.5rem;
 }
 
 .int h1 {
-  --fluid-type-min: 1.5rem;
-  --fluid-type-max: 4rem;
-  --fluid-type-target: 3vw;
-  max-width: 15ch;
+  --fluid-type-min: 1.2rem;
+  --fluid-type-max: 2rem;
+  --fluid-type-target: 2vw;
+  /*max-width: 15ch;*/
 }
-
+/*
 h2,
 .h2,
 h3 {
@@ -70,7 +70,7 @@ h3 {
 
 p {
   max-width: 60ch;
-}
+}*/
 
 h1,
 h2,
@@ -396,6 +396,7 @@ textarea {
 	background-color: var(--primary-red);
 	position: relative;
 	width: max-content;
+	text-align: center;
 }
 
 .title-text::after {
