@@ -306,6 +306,10 @@ textarea {
 .intro-holder > * {
 	margin: auto;
 }
+
+.intro-holder > div {
+	max-width: 60ch;
+}
 /*End Intro Styling*/
 /*Paint styling*/
 .paint {

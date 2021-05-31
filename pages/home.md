@@ -1,20 +1,10 @@
 ---
 layout: layouts/home.njk
-title: Home
+title: Welcome in!
 date: 2016-01-01T00:00:00.000Z
 permalink: /
 eleventyNavigation:
   key: Home
   order: 0
 ---
-# Welcome
-
-This is a template for building a simple blog website with the [Eleventy static site generator](https://www.11ty.io), with deployment to [Netlify](https://www.netlify.com).
-
-Includes [Netlify CMS](https://www.netlifycms.org) for WYSIWYG content editing, and [Netlify Forms](https://www.netlify.com/docs/form-handling) for processing your site's form data.
-
-For more info on installation and usage, view the [project repo]({{ pkg.repository.url }}) on GitHub.
-
-Or click the button below to deploy your own copy of this project to Netlify.
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/danurbanowicz/eleventy-netlify-boilerplate&stack=cms)
+Hey :wave:! I'm Torsten and I strive to be a full person - to me that means I want to experience everything life has to offer and to learn as much as I can. That means I end up with a lot of interests: I'm a web developer (focusing on accessibility), classically trained musician (bassoon and piano but my true love is theory), recovering politico :large_blue_circle:, and all around lover of life. I'm a queer person :rainbow_flag:, a synethete (color/absolute pitch), a DC resident :bike::metro::walking:, and an uncle to 6 (This site is inspired by children's clothing with vibrant colors and strong shapes). Feel free to explore here where I write about my various interests.
