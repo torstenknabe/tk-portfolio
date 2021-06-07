@@ -3,8 +3,13 @@ layout: layouts/base.njk
 section: page
 ---
 
-<section class="base-section content">
-	<div class="container">
-		{{ layoutContent | safe }}
+<main id="main" class="int">
+	<div class="hero-container">
+		<h1 class="title-text"><span class="text-holder">{{ title }}</span></h1>
 	</div>
-</section>
+	<section class="base-section content">
+		<div class="container">
+			{{ layoutContent | safe }}
+		</div>
+	</section>
+</main>

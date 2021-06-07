@@ -217,6 +217,7 @@ textarea {
 	padding: 1rem;
 	text-align: center;
 	position: relative;
+	box-shadow: 5px 5px 20px 1px rgba(0,0,0,.3);
 }
 
 .header-holder {
@@ -323,12 +324,13 @@ textarea {
 	background-color: var(--primary-purple);
 	border-radius: 50%;
 	display: flex;
-    justify-content: center;
-    align-items: center;
-    color: var(--light-color);
-    flex-direction: column;
-    gap: 1rem;
-    text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: var(--light-color);
+  flex-direction: column;
+  gap: 1rem;
+  text-align: center;
+  box-shadow: 5px 5px 20px 1px rgba(0,0,0,.3);
 }
 
 .paintdrop a {
@@ -397,7 +399,7 @@ textarea {
   );
 	margin: 0 auto;
 	padding: 0;
-	background-color: var(--primary-red);
+	/*background-color: var(--primary-red);*/
 	position: relative;
 	width: max-content;
 	text-align: center;
@@ -408,7 +410,7 @@ textarea {
 	background-color: var(--primary-red);
 	width: 150%;
 	height: 150%;
-	padding: 2rem;
+	padding: 0;
 	position: absolute;
 	top: 0;
 	bottom: 0;
@@ -417,6 +419,11 @@ textarea {
 	transform: translate(-50%) skew(-45deg);
 	margin: auto;
 	z-index: 0;
+	box-shadow: 5px 5px 20px 1px rgba(0,0,0,.3);
+}
+
+.int .title-text::after {
+	width: 200%;
 }
 
 .text-holder {
@@ -445,9 +452,15 @@ textarea {
 	margin: auto;
 }
 
+@media (min-width: 64em) {
+	.writing .articles {
+		max-width: 43%;
+	}
+}
+
 .writing .icons {
 	width: 50%;
-	margin: auto;
+	margin: 0 auto;
 }
 
 .writing a {
@@ -743,5 +756,13 @@ textarea {
 	.nav-btn:focus {
 		background-color: var(--secondary-blue);
 		border:  8px solid var(--primary-orange);
+	}
+	.open-nav .open-menu,
+	.close-menu {
+		display: none;
+	}
+	.open-nav .close-menu,
+	.open-menu {
+		display: inline;
 	}
 }

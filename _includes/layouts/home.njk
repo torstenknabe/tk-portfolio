@@ -3,136 +3,161 @@ layout: layouts/base.njk
 section: home
 ---
 
-<div class="intro base-section">
-	<div class="container">
-		<div class="intro-holder">
-			<div>
-				{# <p>Hey &#128075;! I'm Torsten and I strive to be a full person - to me that means I want to experience everything life has to offer and to learn as much as I can. That means I end up with a lot of interests: I'm a web developer (focusing on accessibility), classically trained musician (bassoon and piano but my true love is theory), recovering politico &#128309;, and all around lover of life. I'm a queer person &#x1F3F3;&#xFE0F;&#x200D;&#x1F308;, a synethete (color/absolute pitch), a DC resident &#128690;&#128647;&#128694;, and an uncle to 6 (This site is inspired by children's clothing with vibrant colors and strong shapes). Feel free to explore here where I write about my various interests.</p> #}
-				{{ layoutContent | safe }}
-			</div>
-			<div class="headshot">
-				<img loading="lazy" width="320" alt="Washington Monument at Dusk with a vibrant skyline" src="/static/img/background.jpg" />
+<main id="main">
+	<div class="hero-container">
+		<h1 class="title-text"><span class="text-holder">{{ title }}</span></h1>
+	</div>
+	<div class="intro base-section">
+		<div class="container">
+			<div class="intro-holder">
+				<div>
+					{{ layoutContent | safe }}
+				</div>
+				<div class="headshot">
+					<img loading="lazy" width="320" alt="Washington Monument at Dusk with a vibrant skyline" src="/static/img/background.jpg" />
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
-<section class="paint base-section">
-	<div class="container">
-		<div class="logo-box-top">
-			<article class="paintdrop">
-				<h2><a href="#">This is a Featured article headline</a></h2>
-				<p>This is a description</p>
-			</article>
-		</div>
-		<div class="logo-box-bottom">
-			<article class="paintdrop">
-				<h2><a href="#">This is a Featured article headline</a></h2>
-				<p>This is a description</p>
-			</article>
-		</div>
-	</div>
-</section>
-<svg role="decorative" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-	<path fill="var(--primary-yellow)" fill-opacity="1" d="M0,256L30,256C60,256,120,256,180,240C240,224,300,192,360,192C420,192,480,224,540,208C600,192,660,128,720,128C780,128,840,192,900,202.7C960,213,1020,171,1080,170.7C1140,171,1200,213,1260,218.7C1320,224,1380,192,1410,176L1440,160L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z"></path>
-</svg>
-<section class="writing base-section">
-	<div class="container">
-		<h2 class="title-text"><span class="text-holder">More Articles</span></h2>
-		<div class="articles-holder">
-			<div class="articles">
-				<article>
-					<h3><a href="#">This is an article headline</a></h3>
-					<p>This is a description</p>
-				</article>
-				<article>
-					<h3><a href="#">This is an article headline</a></h3>
-					<p>This is a description</p>
-				</article>
-				<article>
-					<h3><a href="#">This is an article headline</a></h3>
+	<section class="paint base-section">
+		<div class="container">
+
+			{# {% for post in postslist | reverse %}
+				<div{% if post.url == url %} data-current="current item"{% endif %} class="logo-box-top">
+					<article class="paintdrop">
+						<h2><a href="{{ post.url | url }}">{% if post.data.title %}
+								{{ post.data.title }}
+							{% else %}
+								Untitled
+							{% endif %}</a></h2>
+						{% if post.data.summary %}
+						<p>
+							{{ post.data.summary }}
+						</p>
+					{% endif %}
+					</article>
+				</div>
+			{% endfor %} #}
+			<div class="logo-box-top">
+				<article class="paintdrop">
+					<h2><a href="#">This is a Featured article headline</a></h2>
 					<p>This is a description</p>
 				</article>
 			</div>
-			<div class="icons">
-				<svg id="ec5e9592-bf60-4ce5-947c-9447dbaff28e" role="decorative" aria-hidden="true" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin slice" viewBox="0 0 30 24">
-					<defs>
-						<style>
-							.icon-article {
-								fill: none;
-								stroke: var(--primary-purple);
-								stroke-miterlimit: 10;
-							}
-						</style>
-					</defs>
-					<path class="icon-article" d="M7,20V3.281A3.113,3.113,0,0,1,10.347.5H26"/>
-					<line class="icon-article" x1="30" y1="5.5" x2="22" y2="5.5"/>
-					<path class="icon-article" d="M29.5,5V4a3.5,3.5,0,0,0-7,0V20"/>
-					<path class="icon-article" d="M15.5,19.75a3.5,3.5,0,0,0,7,0"/>
-					<path class="icon-article" d="M1.25,19.75a3.5,3.5,0,0,0,3.5,3.5"/>
-					<line class="icon-article" x1="0.75" y1="19.5" x2="16" y2="19.5"/>
-					<line class="icon-article" x1="4.625" y1="23.25" x2="18.875" y2="23.25"/>
-					<path class="icon-article" d="M8.75,3.9c1.2,0,1.2,1.2,2.4,1.2s1.2-1.2,2.4-1.2,1.2,1.2,2.4,1.2,1.2-1.2,2.4-1.2,1.2,1.2,2.4,1.2"/>
-					<path class="icon-article" d="M8.75,11.9c1.2,0,1.2,1.2,2.4,1.2s1.2-1.2,2.4-1.2,1.2,1.2,2.4,1.2,1.2-1.2,2.4-1.2,1.2,1.2,2.4,1.2"/>
-					<path class="icon-article" d="M8.75,7.9c1.2,0,1.2,1.2,2.4,1.2s1.2-1.2,2.4-1.2,1.2,1.2,2.4,1.2,1.2-1.2,2.4-1.2,1.2,1.2,2.4,1.2"/>
-					<path class="icon-article" d="M8.75,15.9c1.2,0,1.2,1.2,2.4,1.2s1.2-1.2,2.4-1.2,1.2,1.2,2.4,1.2,1.2-1.2,2.4-1.2,1.2,1.2,2.4,1.2"/>
-				</svg>
+			<div class="logo-box-bottom">
+				<article class="paintdrop">
+					<h2><a href="#">This is a Featured article headline</a></h2>
+					<p>This is a description</p>
+				</article>
 			</div>
 		</div>
-	</div>
-</section>
-<section class="base-section top8">
-	<div class="container">
-		<h2 class="title-text"><span class="text-holder">Torsten's Top 8</span></h2>
-		<p class="myspace-text">In a throwback to the MySpace era, I've got my top 8 choice picks</p>
-		<ul class="top8-holder styled-list">
-			<li><a href="#">
-				<h3>Title</h3>
-				<div class="top8-holder-img">
-					<img alt="" loading="lazy" class="top8-img" width="240" src="/static/img/background.jpg" />
+	</section>
+	<svg role="decorative" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+		<path fill="var(--primary-yellow)" fill-opacity="1" d="M0,256L30,256C60,256,120,256,180,240C240,224,300,192,360,192C420,192,480,224,540,208C600,192,660,128,720,128C780,128,840,192,900,202.7C960,213,1020,171,1080,170.7C1140,171,1200,213,1260,218.7C1320,224,1380,192,1410,176L1440,160L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z"></path>
+	</svg>
+	<section class="writing base-section">
+		<div class="container">
+			<h2 class="title-text"><span class="text-holder">More Articles</span></h2>
+			<div class="articles-holder">
+				<div class="articles">
+					<article>
+						<h3><a href="#">This is an article headline</a></h3>
+						<p>This is a description</p>
+					</article>
+					<article>
+						<h3><a href="#">This is an article headline</a></h3>
+						<p>This is a description</p>
+					</article>
+					<article>
+						<h3><a href="#">This is an article headline</a></h3>
+						<p>This is a description</p>
+					</article>
+					{# {% set postslist = collections.post %} #}
+					{# {% set postslist = collections.post | reverse %}  #}
+					{# {% for post in postslist.slice(0,2) %} #}
+					{# {% include "components/postslist.njk" %} #}
 				</div>
-			</a></li>
-			<li><a href="#">
-				<h3>Title</h3>
-				<div class="top8-holder-img">
-					<img alt="" loading="lazy" class="top8-img" width="240" src="/static/img/background.jpg" />
+				<div class="icons">
+					<svg id="ec5e9592-bf60-4ce5-947c-9447dbaff28e" role="decorative" aria-hidden="true" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin slice" viewBox="0 0 30 24">
+						<defs>
+							<style>
+								.icon-article {
+									fill: none;
+									stroke: var(--primary-purple);
+									stroke-miterlimit: 10;
+								}
+							</style>
+						</defs>
+						<path class="icon-article" d="M7,20V3.281A3.113,3.113,0,0,1,10.347.5H26"/>
+						<line class="icon-article" x1="30" y1="5.5" x2="22" y2="5.5"/>
+						<path class="icon-article" d="M29.5,5V4a3.5,3.5,0,0,0-7,0V20"/>
+						<path class="icon-article" d="M15.5,19.75a3.5,3.5,0,0,0,7,0"/>
+						<path class="icon-article" d="M1.25,19.75a3.5,3.5,0,0,0,3.5,3.5"/>
+						<line class="icon-article" x1="0.75" y1="19.5" x2="16" y2="19.5"/>
+						<line class="icon-article" x1="4.625" y1="23.25" x2="18.875" y2="23.25"/>
+						<path class="icon-article" d="M8.75,3.9c1.2,0,1.2,1.2,2.4,1.2s1.2-1.2,2.4-1.2,1.2,1.2,2.4,1.2,1.2-1.2,2.4-1.2,1.2,1.2,2.4,1.2"/>
+						<path class="icon-article" d="M8.75,11.9c1.2,0,1.2,1.2,2.4,1.2s1.2-1.2,2.4-1.2,1.2,1.2,2.4,1.2,1.2-1.2,2.4-1.2,1.2,1.2,2.4,1.2"/>
+						<path class="icon-article" d="M8.75,7.9c1.2,0,1.2,1.2,2.4,1.2s1.2-1.2,2.4-1.2,1.2,1.2,2.4,1.2,1.2-1.2,2.4-1.2,1.2,1.2,2.4,1.2"/>
+						<path class="icon-article" d="M8.75,15.9c1.2,0,1.2,1.2,2.4,1.2s1.2-1.2,2.4-1.2,1.2,1.2,2.4,1.2,1.2-1.2,2.4-1.2,1.2,1.2,2.4,1.2"/>
+					</svg>
 				</div>
-			</a></li>
-			<li><a href="#">
-				<h3>Title</h3>
-				<div class="top8-holder-img">
-					<img alt="" loading="lazy" class="top8-img" width="240" src="/static/img/background.jpg" />
-				</div>
-			</a></li>
-			<li><a href="#">
-				<h3>Title</h3>
-				<div class="top8-holder-img">
-					<img alt="" loading="lazy" class="top8-img" width="240" src="/static/img/background.jpg" />
-				</div>
-			</a></li>
-			<li><a href="#">
-				<h3>Title</h3>
-				<div class="top8-holder-img">
-					<img alt="" loading="lazy" class="top8-img" width="240" src="/static/img/background.jpg" />
-				</div>
-			</a></li>
-			<li><a href="#">
-				<h3>Title</h3>
-				<div class="top8-holder-img">
-					<img alt="" loading="lazy" class="top8-img" width="240" src="/static/img/background.jpg" />
-				</div>
-			</a></li>
-			<li><a href="#">
-				<h3>Title</h3>
-				<div class="top8-holder-img">
-					<img alt="" loading="lazy" class="top8-img" width="240" src="/static/img/background.jpg" />
-				</div>
-			</a></li>
-			<li><a href="#">
-				<h3>Title</h3>
-				<div class="top8-holder-img">
-					<img alt="" loading="lazy" class="top8-img" width="240" src="/static/img/background.jpg" />
-				</div>
-			</a></li>
-		</ul>
-	</div>
-</section>
+			</div>
+		</div>
+	</section>
+	<section class="base-section top8">
+		<div class="container">
+			<h2 class="title-text"><span class="text-holder">Torsten's Top 8</span></h2>
+			<p class="myspace-text">In a throwback to the MySpace era, I've got my top 8 choice picks</p>
+			<ul class="top8-holder styled-list">
+				<li><a href="#">
+					<h3>Title</h3>
+					<div class="top8-holder-img">
+						<img alt="" loading="lazy" class="top8-img" width="240" src="/static/img/background.jpg" />
+					</div>
+				</a></li>
+				<li><a href="#">
+					<h3>Title</h3>
+					<div class="top8-holder-img">
+						<img alt="" loading="lazy" class="top8-img" width="240" src="/static/img/background.jpg" />
+					</div>
+				</a></li>
+				<li><a href="#">
+					<h3>Title</h3>
+					<div class="top8-holder-img">
+						<img alt="" loading="lazy" class="top8-img" width="240" src="/static/img/background.jpg" />
+					</div>
+				</a></li>
+				<li><a href="#">
+					<h3>Title</h3>
+					<div class="top8-holder-img">
+						<img alt="" loading="lazy" class="top8-img" width="240" src="/static/img/background.jpg" />
+					</div>
+				</a></li>
+				<li><a href="#">
+					<h3>Title</h3>
+					<div class="top8-holder-img">
+						<img alt="" loading="lazy" class="top8-img" width="240" src="/static/img/background.jpg" />
+					</div>
+				</a></li>
+				<li><a href="#">
+					<h3>Title</h3>
+					<div class="top8-holder-img">
+						<img alt="" loading="lazy" class="top8-img" width="240" src="/static/img/background.jpg" />
+					</div>
+				</a></li>
+				<li><a href="#">
+					<h3>Title</h3>
+					<div class="top8-holder-img">
+						<img alt="" loading="lazy" class="top8-img" width="240" src="/static/img/background.jpg" />
+					</div>
+				</a></li>
+				<li><a href="#">
+					<h3>Title</h3>
+					<div class="top8-holder-img">
+						<img alt="" loading="lazy" class="top8-img" width="240" src="/static/img/background.jpg" />
+					</div>
+				</a></li>
+			</ul>
+		</div>
+	</section>
+</main>

@@ -7,6 +7,8 @@ if (window.netlifyIdentity) {
     }
   });
 }
+
+document.addEventListener("DOMContentLoaded", function() {
   const menu = document.querySelector('.nav-btn');
   const body = document.querySelector('body');
   const handleToggle = () => body.classList.toggle('open-nav');
@@ -17,3 +19,4 @@ if (window.netlifyIdentity) {
       handleToggle();
     }
   });
+});

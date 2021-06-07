@@ -1,0 +1,21 @@
+<svg id="e4426ddd-9bac-4640-bcbe-0f5b69759c94" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      rect, path {
+        stroke: #fff;
+      }
+    </style>
+  </defs>
+  <rect x="11.5" width="1" height="24"/>
+  <rect width="24" height="1"/>
+  <path d="M12,24C5.27,24,0,21.25,0,17.75S5.27,11.5,12,11.5s12,2.75,12,6.25S18.73,24,12,24Zm0-11.5c-6,0-11,2.4-11,5.25S6,23,12,23s11-2.4,11-5.25S18,12.5,12,12.5Z"/>
+  <rect x="17.5" y="10.22" width="1" height="15.56" transform="translate(-7.46 18) rotate(-45)"/>
+  <rect y="11.5" width="24" height="1"/>
+  <rect y="23" width="24" height="1"/>
+  <rect width="1" height="24"/>
+  <rect x="23" width="1" height="24"/>
+  <rect x="11.5" y="-4.26" width="1" height="32.53" transform="translate(-4.97 12) rotate(-45)"/>
+  <path d="M12.14,12.5v-1C18,11.47,23,9.06,23,6.25S18,1,12,1V0c6.73,0,12,2.75,12,6.25S18.79,12.46,12.14,12.5Z"/>
+  <path d="M11.86,12.5C5.21,12.46,0,9.72,0,6.25S5.27,0,12,0V1C6,1,1,3.4,1,6.25s5,5.22,10.87,5.25Z"/>
+  <path d="M12.14,24V23C18,23,23,20.56,23,17.75S18,12.5,12,12.5v-1c6.73,0,12,2.75,12,6.25S18.79,24,12.14,24Z"/>
+</svg>
