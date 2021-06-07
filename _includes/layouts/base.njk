@@ -81,5 +81,10 @@
 			<span class="close-menu">Close</span>
 		</button>
 		<a class="skip-link" href="#wrapper">Back to top</a>
+		  <script async src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+		  {% set js %}
+		    {% include "assets/js/inline.js" %}
+		  {% endset %}
+		  <script>{{ js | jsmin | safe }}</script>
 	</body>
 </html>
