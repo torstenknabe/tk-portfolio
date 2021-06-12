@@ -331,6 +331,7 @@ textarea {
   gap: 1rem;
   text-align: center;
   box-shadow: 5px 5px 20px 1px rgba(0,0,0,.3);
+  padding: 1rem;
 }
 
 .paintdrop a {
@@ -575,7 +576,7 @@ textarea {
 
 .tk-logo {
 	fill: none;
-	stroke: var(--light-color);
+	stroke: var(--secondary-green);
 	stroke-width: 1;
 }
 
@@ -588,6 +589,41 @@ textarea {
 
 /*Media queries*/
 @media (prefers-reduced-motion:  no-preference) {
+	.paintdrop {
+		-webkit-animation-duration: 1.5s;
+		animation-duration: 1.5s;
+		-webkit-animation-fill-mode: both;
+		animation-fill-mode: both;
+		-webkit-animation-timing-function: ease-in-out;
+		animation-timing-function: ease-in-out;
+		animation-iteration-count: 1;
+		-webkit-animation-iteration-count: 1;
+	}
+
+	.paintdrop:hover {
+		cursor: pointer;
+		animation-name: bounce;
+		-moz-animation-name: bounce;
+	}
+
+	@keyframes bounce {
+		0%, 100%, 20%, 50%, 80% {
+			-webkit-transform: translateY(0);
+			-ms-transform:     translateY(0);
+			transform:         translateY(0)
+		}
+		40% {
+			-webkit-transform: translateY(-30px);
+			-ms-transform:     translateY(-30px);
+			transform:         translateY(-30px)
+		}
+		60% {
+			-webkit-transform: translateY(-15px);
+			-ms-transform:     translateY(-15px);
+			transform:         translateY(-15px)
+		}
+	}
+
 	.top8 a {
 		text-decoration: none;
 		transition: all .3s ease-in-out;
@@ -610,54 +646,154 @@ textarea {
 	.lines {
 		stroke-dasharray: 24;
 	  stroke-dashoffset: 24;
-	  animation: draw 1.5s linear forwards;
+	  animation: draw 1s linear forwards;
+	  will-change: transform;
+
 	}
 	.ellipse,
 	.diagonal {
 		stroke-dasharray: 1000;
 	  stroke-dashoffset: 1000;
 	  animation: draw 20s linear forwards;
+	  will-change: transform;
 	}
-	/*T vertical line*/
+	/*T Vertical line*/
+	#vtop2 {
+		animation-delay: .5s;
+		stroke: var(--light-color);
+	}
+	/*T horizontal line*/
 	#htop {
 	  animation-delay: 1.5s;
+	}
+	#htop2 {
+		animation-delay: 2s;
+		stroke: var(--light-color);
 	}
 	/*O*/
 	#efull {
 		animation-delay: 3s;
 	}
+	#efull2 {
+		animation-delay: 3.5s;
+		stroke: var(--light-color);
+	}
+	/*R Vertical line*/
+	#vtop3 {
+	  animation-delay: 4.5s;
+	  stroke: var(--secondary-green);
+	}
+	#vtop4 {
+		animation-delay: 5s;
+		stroke: var(--light-color);
+	}
 	/*R ellipse*/
 	#etopright {
-		animation-delay: 4s;
+		animation-delay: 6s;
+	}
+	#etopright2 {
+		animation-delay: 6.5s;
+		stroke: var(--light-color);
 	}
 	/*R diagonal*/
 	#dfull {
-		animation-delay: 5s;
+		animation-delay: 7.5s;
+	}
+	#dfull2 {
+		animation-delay: 8s;
+		stroke: var(--light-color);
 	}
 	/*S top left*/
 	#ehalfleft {
-		animation-delay: 6s;
+		animation-delay: 9s;
+	}
+	#ehalfleft2 {
+		animation-delay: 9.5s;
+		stroke: var(--light-color);
+	}
+	/*S bottom right*/
+	#ebottomright {
+		animation-delay: 10.5s;
+	}
+	#ebottomright2 {
+		animation-delay: 11s;
+		stroke: var(--light-color);
+	}
+	/*2nd T vertical line*/
+	#vtop5 {
+		animation-delay: 12s;
+	}
+	#vtop6 {
+		animation-delay: 12.5s;
+		stroke: var(--light-color);
+	}
+	/*2nd T Horizontal line*/
+	#htop3 {
+		animation-delay: 13.5s;
+	}
+	#htop4 {
+		animation-delay: 14s;
+		stroke: var(--light-color);
 	}
 	/*E Vertical left line*/
 	#vleft {
-		animation-delay: 7s;
+		animation-delay: 15s;
+	}
+	#vleft2 {
+		animation-delay: 15.5s;
+		stroke: var(--light-color);
+	}
+	/*E horizontal top line*/
+	#htop5 {
+		animation-delay: 16.5s;
+	}
+	#htop6 {
+		animation-delay: 17s;
+		stroke: var(--light-color);
 	}
 	/*E horizontal center line*/
 	#hcenter {
-		animation-delay: 8.5s;
+		animation-delay: 18s;
+	}
+	#hcenter2 {
+		animation-delay: 18.5s;
+		stroke: var(--light-color);
 	}
 	/*E horizontal bottom line*/
 	#hbottom {
-		animation-delay: 10s;
+		animation-delay: 19.5s;
 	}
+	#hbottom2 {
+		animation-delay: 20s;
+		stroke: var(--light-color);
+	}
+	/*N Vertical left line*/
+	#vleft3 {
+		animation:  drawBackwards 1s linear forwards;
+		animation-delay: 21s;
+	}
+	#vleft4 {
+		animation:  drawBackwards 1s linear forwards;
+		animation-delay: 21.5s;
+		stroke: var(--light-color);
+	}	
 	/*N diagonal*/
 	#dhalf {
-		animation-delay: 12s;
+		animation-delay: 22.5s;
+	}
+	#dhalf2 {
+		animation-delay: 23s;
+		stroke: var(--light-color);
 	}
 	/*N right vertical line*/
 	#vright {
-		animation: drawBackwards 1.5s linear forwards;
-		animation-delay: 13s;
+		animation: drawBackwards 1s linear forwards;
+		animation-delay: 24s;
+	}
+	#vright2 {
+		animation: drawBackwards 1s linear forwards;
+		animation-delay: 24.5s;
+		stroke: var(--light-color);
 	}
 	@keyframes draw {
 		to {
@@ -682,7 +818,7 @@ textarea {
 	.intro .headshot img {
 		width: 100%;
 	}
-	.int img {
+	img {
 		width: 100%;
 	}
 	.side-nav {

@@ -8,17 +8,22 @@ pagination:
 permalink: "authors/index.html"
 ---
 
-<h1>{{ title }}</h1>
-
-<section>
-  {% for author in pagination.items %}
-    <article>
-      <h3>
-        <a href="/authors/{{ author | slug }}">{{ author | safe }}</a>
-      </h3>
-    </article>
-  {% endfor %}
-  <nav>
-    <a href="{{ '/blog/' | url }}">← Blog index</a>
-  </nav>
-</section>
+<main id="main" class="int">
+  <div class="hero-container">
+    <h1 class="title-text"><span class="text-holder">{{ title }}</span></h1>
+  </div>
+  <section class="base-section content">
+    <div class="container">
+      {% for author in pagination.items %}
+        <article>
+          <h3>
+            <a href="/authors/{{ author | slug }}">{{ author | safe }}</a>
+          </h3>
+        </article>
+      {% endfor %}
+      <nav>
+        <a href="{{ '/blog/' | url }}">← Blog index</a>
+      </nav>
+    </div>
+  </section>
+</main>
