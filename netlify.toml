@@ -2,15 +2,15 @@
   publish = "_site"
   command = "eleventy"
 
-[[plugins]]
-package = "netlify-plugin-csp-generator"
+# [[plugins]]
+# package = "netlify-plugin-csp-generator"
 
-  [plugins.inputs]
-  buildDir = "_site"
+#  [plugins.inputs]
+#  buildDir = "_site"
 
-  [plugins.inputs.policies]
-    defaultSrc = "'self'"
-    styleSrc = "'unsafe-hashes'"
+#  [plugins.inputs.policies]
+#    defaultSrc = "'self'"
+#    styleSrc = "'unsafe-hashes'"
 
 # REDIRECT and HEADERS examples
 
@@ -31,10 +31,10 @@ package = "netlify-plugin-csp-generator"
 #   Define which paths this specific [[headers]] block will cover.
 #   for = "/*"
 
-#[headers.values]
-#   X-Frame-Options = "DENY"
-#   X-XSS-Protection = "1; mode=block"
-#   Content-Security-Policy = "script-src 'strict-dynamic' 'nonce-rAnd0m123' 'unsafe-inline' http: https:; object-src 'none'; base-uri 'none'; require-trusted-types-for 'script'; report-uri https://identity.netlify.com;"
+[headers.values]
+   X-Frame-Options = "DENY"
+   X-XSS-Protection = "1; mode=block"
+   Content-Security-Policy = "script-src 'strict-dynamic' 'nonce-rAnd0m123' 'unsafe-inline' http: https:; object-src 'none'; base-uri 'none'; require-trusted-types-for 'script'; report-uri https://identity.netlify.com;"
 
 # Redirects and headers are GLOBAL for all builds – they do not get scoped to
 # contexts no matter where you define them in the file.
