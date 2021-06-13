@@ -31,10 +31,10 @@
 #   Define which paths this specific [[headers]] block will cover.
 #   for = "/*"
 
-[headers.values]
-   X-Frame-Options = "DENY"
-   X-XSS-Protection = "1; mode=block"
-   Content-Security-Policy = "frame-ancestors 'self'; default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; object-src 'none';"
+#[headers.values]
+#   X-Frame-Options = "DENY"
+#   X-XSS-Protection = "1; mode=block"
+#   Content-Security-Policy = "frame-ancestors 'self'; default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; object-src 'none';"
 
 # Redirects and headers are GLOBAL for all builds – they do not get scoped to
 # contexts no matter where you define them in the file.
