@@ -21,35 +21,8 @@ section: home
 	</div>
 	<section class="paint base-section">
 		<div class="container">
-
-			{# {% for post in postslist | reverse %}
-				<div{% if post.url == url %} data-current="current item"{% endif %} class="logo-box-top">
-					<article class="paintdrop">
-						<h2><a href="{{ post.url | url }}">{% if post.data.title %}
-								{{ post.data.title }}
-							{% else %}
-								Untitled
-							{% endif %}</a></h2>
-						{% if post.data.summary %}
-						<p>
-							{{ post.data.summary }}
-						</p>
-					{% endif %}
-					</article>
-				</div>
-			{% endfor %} #}
-			<div class="logo-box-top">
-				<article class="paintdrop">
-					<h2><a href="#">This is a Featured article headline</a></h2>
-					<p>This is a description</p>
-				</article>
-			</div>
-			<div class="logo-box-bottom">
-				<article class="paintdrop">
-					<h2><a href="#">This is a Featured article headline</a></h2>
-					<p>This is a description</p>
-				</article>
-			</div>
+			{% set featurelist = collections.post.slice(-2) %}
+		    {% include "components/featurelist.njk" %}
 		</div>
 	</section>
 	<svg role="decorative" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -60,22 +33,8 @@ section: home
 			<h2 class="title-text"><span class="text-holder">More Articles</span></h2>
 			<div class="articles-holder">
 				<div class="articles">
-					<article>
-						<h3><a href="#">This is an article headline</a></h3>
-						<p>This is a description</p>
-					</article>
-					<article>
-						<h3><a href="#">This is an article headline</a></h3>
-						<p>This is a description</p>
-					</article>
-					<article>
-						<h3><a href="#">This is an article headline</a></h3>
-						<p>This is a description</p>
-					</article>
-					{# {% set postslist = collections.post %} #}
-					{# {% set postslist = collections.post | reverse %}  #}
-					{# {% for post in postslist.slice(0,2) %} #}
-					{# {% include "components/postslist.njk" %} #}
+		        	{% set postslist = collections.post.slice(-4, -2)%}
+		        	{% include "components/postslist.njk" %}
 				</div>
 				<div class="icons">
 					<svg id="ec5e9592-bf60-4ce5-947c-9447dbaff28e" role="decorative" aria-hidden="true" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin slice" viewBox="0 0 30 24">

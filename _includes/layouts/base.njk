@@ -6,14 +6,8 @@
 	<body>
 		<div class="wrapper" id="wrapper">
 			<div class="main-content">
-				{# <main id="main">
-					<div class="hero-container">
-						<h1 class="title-text"><span class="text-holder">{{ title }}</span></h1>
-					</div> #}
 
-						{{ layoutContent | safe }}
-
-			{# 	</main>		 #}
+				{{ layoutContent | safe }}
 
 				{% include "components/footer.njk" %}
 
