@@ -1,0 +1,20 @@
+{% for post in featurelist | reverse %}
+	<div class="paintdrop-box">
+		<article{% if post.url == url %} data-current="current item"{% endif %} class="paintdrop">
+			<h2>
+				<a href="{{ post.url | url }}">
+					{% if post.data.title %}
+						{{ post.data.title }}
+					{% else %}
+						Untitled
+					{% endif %}
+				</a>
+			</h2>
+			{% if post.data.summary %}
+				<p>
+					{{ post.data.summary }}
+				</p>
+			{% endif %}
+		</article>
+	</div>
+{% endfor %}
