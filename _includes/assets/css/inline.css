@@ -470,16 +470,37 @@ textarea {
 
 .top8-holder {
 	display: flex;
-	gap: 2rem;
+	gap: 4rem 2rem;
 	flex-wrap: wrap;
 	justify-content: center;
-	padding: 1rem;
+	padding: 4rem 1rem 2rem;
 	border: 8px solid var(--primary-orange);
 }
 
 .top8 h3 {
 	margin: 0;
 	font-size: 1.5rem;
+	position: relative;
+}
+
+.top8 a h3::before {
+	position: absolute;
+	left: 50%;
+	top: -2rem;
+	transform: translateX(-50%);
+	width: 1rem;
+}
+
+.top8 .tiktok h3::before {
+	content: url(/static/img/tiktok.svg);
+}
+
+.top8 .twitch h3::before {
+	content: url(/static/img/twitch.svg);
+}
+
+.top8 .instagram h3::before {
+	content: url(/static/img/instagram.svg);
 }
 
 .top8 .myspace-text {
