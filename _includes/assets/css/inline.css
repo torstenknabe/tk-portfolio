@@ -434,7 +434,7 @@ textarea {
 .writing .articles-holder {
 	display: flex;
 	margin-top: 8rem;
-	gap: 4rem;
+	gap: 1rem 4rem;
 	flex-wrap: wrap;
 	justify-content: space-between;
 }
@@ -911,5 +911,20 @@ textarea {
 	.open-nav .close-menu,
 	.open-menu {
 		display: inline;
+	}
+	.int .title-text {
+		width: unset;
+		margin: 0 1rem;
+	}
+	.container,
+	.content .container {
+		padding: 0 2rem;
+	}
+	.intro-holder {
+		gap: 1rem;
+	}
+	.writing .articles-holder,
+	.top8 .myspace-text {
+		margin-top: 3rem;
 	}
 }
