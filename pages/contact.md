@@ -11,7 +11,4 @@ eleventyNavigation:
   key: Contact
   order: 3
 ---
-<https://twitter.com/torkna>The contact form on this page uses [Netlify Forms](https://www.netlify.com/docs/form-handling/) to process submissions,
-and saves them in the connected Netlify account where notifications can
-optionally be configured. Each submission is passed through a spam filter and
-if flagged, will display a CAPTCHA challenge to the user.
+[](https://twitter.com/torkna)Every page on this site includes a contact form in the footer if you want to see me directly. However, you can also find me on twitter at[ @torkna](https://twitter.com/torkna) if you want more short form updates on what I'm up to or thinking about.
