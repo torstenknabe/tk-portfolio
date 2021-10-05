@@ -1,9 +1,10 @@
 <!doctype html>
-<html {% if section %} data-current="{{ section }}"{% endif %} lang="en">
+<html {% if section %} data-current="{{ section }}"{% endif %} lang="en" class="no-js">
 
 	{% include "components/head.njk" %}
 
 	<body>
+		<a class="skip-link" href="#primary-nav">Skip to navigation</a>
 		<div class="wrapper" id="wrapper">
 			<div class="main-content">
 
@@ -92,11 +93,7 @@
 				</header>
 			</div>
 		</div>
-		<button class="nav-btn">
-			<span class="open-menu">Menu</span>
-			<span class="close-menu">Close</span>
-		</button>
-		<a class="skip-link" href="#wrapper">Back to top</a>
+		<a class="skip-link bottom" href="#wrapper">Back to top</a>
 		  <script async defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 		  {% set js %}
 		    {% include "assets/js/inline.js" %}

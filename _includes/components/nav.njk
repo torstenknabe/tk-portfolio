@@ -1,6 +1,10 @@
-<nav aria-label="Primary Navigation" class="primary-nav">
+<nav role="navigation" aria-label="Primary Navigation" class="primary-nav" id="primary-nav">
+  <button aria-controls="main-nav" aria-expanded="false" class="nav-btn">
+    <span class="open-menu">Menu</span>
+    <span class="close-menu">Close</span>
+  </button>
   {% set navPages = collections.all | eleventyNavigation %}
-  <ul class="styled-list">
+  <ul class="styled-list" id="main-nav">
   {%- for entry in navPages %}
     <li>
       <a href="{{ entry.url | url }}"{% if entry.url == page.url %} data-current="current item"{% endif %}>{{ entry.title }}</a>
