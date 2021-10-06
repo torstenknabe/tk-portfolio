@@ -62,6 +62,12 @@ h3 {
   /*max-width: 15ch;*/
 }
 
+.int h2 {
+	--fluid-type-main:  1rem;
+	--fluid-type-max:  1.9rem;
+	--fluid-type-target: 1.5vw;
+}
+
 h1,
 h2,
 .h2,
@@ -310,9 +316,9 @@ textarea {
 
 .social-nav ul {
 	display: flex;
-    justify-content: center;
-    gap: 1rem;
-    text-align: center;
+  justify-content: center;
+  gap: 1rem;
+  text-align: center;
 }
 
 .styled-list a {
@@ -320,7 +326,7 @@ textarea {
 }
 
 .styled-list a:hover .social-icon {
-	fill: var(--primary-purple);
+	fill: var(--primary-orange);
 }
 
 .footer .container {
@@ -633,11 +639,13 @@ textarea {
 }
 
 /*End main content styles*/
-
 .tk-logo {
-	fill: none;
-	stroke: var(--secondary-green);
+	fill:  none;
+	stroke:  var(--light-color);
 	stroke-width: 1;
+}
+.logo-anim .tk-logo {
+	stroke: var(--secondary-green);
 }
 
 /*Internal page styles*/
@@ -699,161 +707,169 @@ textarea {
 		border: 8px solid var(--primary-blue);
 	}
 
-	.tk-logo {
+	.logo-anim .tk-logo {
 	  fill: none;
 	  stroke-miterlimit: 10;
 	}
-	.lines {
+	.logo-anim .lines {
 		stroke-dasharray: 24;
 	  stroke-dashoffset: 24;
 	  animation: draw 1s linear forwards;
 	  will-change: transform;
 
 	}
-	.ellipse,
-	.diagonal {
+	.logo-anim .ellipse,
+	.logo-anim .diagonal {
 		stroke-dasharray: 1000;
 	  stroke-dashoffset: 1000;
 	  animation: draw 20s linear forwards;
 	  will-change: transform;
 	}
 	/*T Vertical line*/
-	#vtop2 {
+	.logo-anim #vtop2 {
 		animation-delay: .5s;
 		stroke: var(--light-color);
 	}
 	/*T horizontal line*/
-	#htop {
+	.logo-anim #htop {
 	  animation-delay: 1.5s;
 	}
-	#htop2 {
+	.logo-anim #htop2 {
 		animation-delay: 2s;
 		stroke: var(--light-color);
 	}
 	/*O*/
-	#efull {
+	.logo-anim #efull {
 		animation-delay: 3s;
 	}
-	#efull2 {
+	.logo-anim #efull2 {
 		animation-delay: 3.5s;
 		stroke: var(--light-color);
 	}
 	/*R Vertical line*/
-	#vtop3 {
+	.logo-anim #vtop3 {
 	  animation-delay: 4.5s;
 	  stroke: var(--secondary-green);
 	}
-	#vtop4 {
+	.logo-anim #vtop4 {
 		animation-delay: 5s;
 		stroke: var(--light-color);
 	}
 	/*R ellipse*/
-	#etopright {
+	.logo-anim #etopright {
 		animation-delay: 6s;
 	}
-	#etopright2 {
+	.logo-anim #etopright2 {
 		animation-delay: 6.5s;
 		stroke: var(--light-color);
 	}
 	/*R diagonal*/
-	#dfull {
+	.logo-anim #dfull {
 		animation-delay: 7.5s;
 	}
-	#dfull2 {
+	.logo-anim #dfull2 {
 		animation-delay: 8s;
 		stroke: var(--light-color);
 	}
 	/*S top left*/
-	#ehalfleft {
+	.logo-anim #ehalfleft {
 		animation-delay: 9s;
 	}
-	#ehalfleft2 {
+	.logo-anim #ehalfleft2 {
 		animation-delay: 9.5s;
 		stroke: var(--light-color);
 	}
 	/*S bottom right*/
-	#ebottomright {
+	.logo-anim #ebottomright {
 		animation-delay: 10.5s;
 	}
-	#ebottomright2 {
+	.logo-anim #ebottomright2 {
 		animation-delay: 11s;
 		stroke: var(--light-color);
 	}
 	/*2nd T vertical line*/
-	#vtop5 {
+	.logo-anim #vtop5 {
 		animation-delay: 12s;
 	}
-	#vtop6 {
+	.logo-anim #vtop6 {
 		animation-delay: 12.5s;
 		stroke: var(--light-color);
 	}
 	/*2nd T Horizontal line*/
-	#htop3 {
+	.logo-anim #htop3 {
 		animation-delay: 13.5s;
 	}
-	#htop4 {
+	.logo-anim #htop4 {
 		animation-delay: 14s;
 		stroke: var(--light-color);
 	}
 	/*E Vertical left line*/
-	#vleft {
+	.logo-anim #vleft {
 		animation-delay: 15s;
 	}
-	#vleft2 {
+	.logo-anim #vleft2 {
 		animation-delay: 15.5s;
 		stroke: var(--light-color);
 	}
 	/*E horizontal top line*/
-	#htop5 {
+	.logo-anim #htop5 {
 		animation-delay: 16.5s;
 	}
-	#htop6 {
+	.logo-anim #htop6 {
 		animation-delay: 17s;
 		stroke: var(--light-color);
 	}
 	/*E horizontal center line*/
-	#hcenter {
+	.logo-anim #hcenter {
 		animation-delay: 18s;
 	}
-	#hcenter2 {
+	.logo-anim #hcenter2 {
 		animation-delay: 18.5s;
 		stroke: var(--light-color);
 	}
 	/*E horizontal bottom line*/
-	#hbottom {
+	.logo-anim #hbottom {
 		animation-delay: 19.5s;
 	}
-	#hbottom2 {
+	.logo-anim #hbottom2 {
 		animation-delay: 20s;
 		stroke: var(--light-color);
 	}
 	/*N Vertical left line*/
-	#vleft3 {
+	.logo-anim #vleft3 {
 		animation:  drawBackwards 1s linear forwards;
 		animation-delay: 21s;
 	}
-	#vleft4 {
+	.logo-anim #vleft4 {
 		animation:  drawBackwards 1s linear forwards;
 		animation-delay: 21.5s;
 		stroke: var(--light-color);
 	}	
 	/*N diagonal*/
-	#dhalf {
+	.logo-anim #dhalf {
 		animation-delay: 22.5s;
 	}
-	#dhalf2 {
+	.logo-anim #dhalf2 {
 		animation-delay: 23s;
 		stroke: var(--light-color);
 	}
 	/*N right vertical line*/
-	#vright {
+	.logo-anim #vright {
 		animation: drawBackwards 1s linear forwards;
 		animation-delay: 24s;
 	}
-	#vright2 {
+	.logo-anim #vright2 {
 		animation: drawBackwards 1s linear forwards;
 		animation-delay: 24.5s;
 		stroke: var(--light-color);
+	}
+	.logo-anim #tk-logo .tk-logo {
+	/*	transition-delay: 25s;
+		transition-property: stroke;
+		transition-duration: 0s;*/
+		/*animation: removeStroke 1s linear forwards;
+		animation-delay: 25s;*/
+		opacity: 1;
 	}
 	@keyframes draw {
 		to {
@@ -866,6 +882,11 @@ textarea {
 		}
 		to {
 			stroke-dashoffset: 48;
+		}
+	}
+	@media (max-width: 48em) {
+		.js .open-nav .header-holder {
+			transition: .5s ease;
 		}
 	}
 }
@@ -926,7 +947,7 @@ textarea {
 	}
 	.js .open-nav	.header-holder {
 		max-height: 100vh;
-		overflow: scroll;
+		overflow: auto;
 	}
 	.js .open-nav .main-content {
 		max-height: 100vh;
@@ -1017,7 +1038,7 @@ textarea {
 
 	.js .open-nav .header-holder {
 		position: relative;
-		height: 100vh;
+		height: calc(100vh - 2rem);
 		padding: 1rem 0;
 	}
 
@@ -1028,11 +1049,6 @@ textarea {
 		z-index: 2;
 		width: 100%;
 		height: 100%;
-
-		opacity: 1;
-		visibility: visible;
-		filter:alpha(opacity=100);
-		transition: opacity 1s ease-in-out;
 	}
 
 	.open-nav .open-menu,

@@ -16,11 +16,13 @@ document.addEventListener("DOMContentLoaded", function() {
   const menuBtn = document.querySelector('.nav-btn');
   const body = document.querySelector('body');
   const nav = document.querySelector('.side-nav');
+  const logoAnim = document.querySelector('.logo-anim')
 
   menuBtn.addEventListener('click', function(){
     if (body.classList.contains('open-nav')) {
       menuBtn.setAttribute('aria-expanded', 'false');
       body.classList.remove('open-nav');
+      logoAnim.classList.remove('logo-anim');
       nav.classList.remove('nav-trap')
     } else {
       body.classList.add('open-nav');
