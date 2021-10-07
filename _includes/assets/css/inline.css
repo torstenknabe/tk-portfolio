@@ -654,6 +654,11 @@ textarea {
 	height:  30vh;
 	background-size: 3rem;
 }
+.int .floated-img {
+	float: left;
+	max-width: 200px;
+	margin: 1rem;
+}
 /*End Internal page styles*/
 
 /*Media queries*/

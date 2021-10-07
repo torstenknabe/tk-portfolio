@@ -81,9 +81,12 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("admin");
   eleventyConfig.addPassthroughCopy("_includes/assets/");
 
+  // Added CSS to markdown following instructions here: https://dev.to/iarehilton/11ty-markdown-attributes-2dl3
+  eleventyConfig.addPassthroughCopy("css");
   /* Markdown Plugins */
   let markdownIt = require("markdown-it");
   let markdownItAnchor = require("markdown-it-anchor");
+  var markdownItAttrs = require('markdown-it-attrs');
   let options = {
     html: true,
     breaks: true,
@@ -92,13 +95,26 @@ module.exports = function(eleventyConfig) {
   let opts = {
     permalink: false
   };
+  let markdownLib = markdownIt(options).use(markdownItAttrs);
 
-  eleventyConfig.setLibrary("md", markdownIt(options)
-    .use(markdownItAnchor, opts)
-  );
+  // This is the original markdown library config. - replaced with line 105 4 lines down
+  // eleventyConfig.setLibrary("md", markdownIt(options)
+  //   .use(markdownItAnchor, opts)
+  // );
+
+  eleventyConfig.setLibrary("md", markdownLib);
+    
 
   return {
     templateFormats: ["md", "njk", "html", "liquid"],
+
+    passthroughFileCopy: true,
+    dir: {
+      input: ".",
+      includes: "_includes",
+      data: "_data",
+      output: "_site"
+    },
 
     // If your site lives in a different subdirectory, change this.
     // Leading or trailing slashes are all normalized away, so don’t worry about it.
