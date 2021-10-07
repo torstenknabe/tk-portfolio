@@ -1,13 +1,13 @@
 ---
-title: About me
+title: Old about me
 metaDescription: This is a sample meta description. If one is not present in
   your page/post's front matter, the default metadata.desciption will be used
   instead.
 date: 2021-06-16T23:00:00.000Z
 permalink: /about-old/index.html
-# eleventyNavigation:
-#   key: About
-#   order: 1
+eleventyNavigation:
+  order: 0
+  key: old about
 ---
 My name is Torsten Knabe and I have a strong curiosity for learning and unlearning. Many behaviors and thoughts are taken for granted without an analysis of what the implications of them are. I strive to continually analyse my own thoughts and actions for improvement to unlearn those things that are marginalizing and to learn new skills and actions that aren't.\
 \
