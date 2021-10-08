@@ -659,6 +659,20 @@ textarea {
 	max-width: 200px;
 	margin: 1rem;
 }
+pre {
+	background-color: var(--body-color);
+	padding: 1rem;
+	max-width: 100%;
+	overflow: auto;
+	color: var(--light-color);
+	tab-size: 2;
+	word-break: normal;
+	hyphens: none;
+}
+pre code {
+	overflow-x: auto;
+	white-space: break-spaces;
+}
 /*End Internal page styles*/
 
 /*Media queries*/
