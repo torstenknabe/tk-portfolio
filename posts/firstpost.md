@@ -19,11 +19,11 @@ Fortunately/Unfortunately when designing a logo for myself, I don't have differe
 
 I really like symmetry and on tiktok (Where I get inspired by really creative content) I ran across [Cami Creative](https://www.tiktok.com/@cami.creative) who turns different words and names into shapes. I really enjoyed her videos, and decided that I could adapt her style to making an animated logo with SVG and CSS for my name.
 
-I also really liked [Cassie Evans](https://www.cassie.codes/)' logo and the animation that she did on her site. Her logo and her [discussion of her animation process and usage of SVG](https://www.cassie.codes/posts/creating-my-logo-animation/) was really informative. She took a JavaScript approach to animation with [GSAP](https://greensock.com/gsap/), but I didn't want to include any client side JavaScript dependencies, so I went with a pure CSS approach to the animation.
+I also really liked [Cassie Evans](https://www.cassie.codes/)' logo and the animation that she did on her site. Her logo and her [discussion of her animation process and usage of SVG](https://www.cassie.codes/posts/creating-my-logo-animation/) was really informative. She took a JavaScript approach to animation with [GSAP](https://greensock.com/gsap/), but I didn't want to include any client side JavaScript dependencies for performance, so I went with a pure CSS approach to the animation.
 
-I started with paper and pen to iterate quickly on varying patterns. My goal was to achieve a symmetric design that incorporated each letter of my name. I got stuck for a bit on symmetry, what finally got me headed in the right direction is that I broke down each letter into constituent shapes that were as simple as possible. I discovered that my first name has 6 vertical lines, 5 horizontal lines, 1.5 diagonal lines, 2 left semi-circles, and 3 right semi-circles. That got me to expiriment with just those specific shapes in different orders and overlapping, and then to form those together into a cohesive design.
+I started with paper and pen to iterate quickly on varying patterns. My goal was to achieve a symmetric design that incorporated each letter of my name. I got stuck for a bit on symmetry, what finally got me headed in the right direction is that I broke down each letter into constituent shapes that were as simple as possible. I discovered that my first name has 6 vertical lines, 5 horizontal lines, 1.5 diagonal lines, 2 left semi-circles, and 3 right semi-circles. That got me to experiment with just those specific shapes in different orders and overlapping, and then to form those together into a cohesive design.
 
-I finally landed on the final design. 
+I finally landed on the final design on paper, now I had to 
 
 Making the design in SVG - experimenting with shapes, paths, lines
 
@@ -38,8 +38,6 @@ Lessons learned:
 Hand editing SVG isn't too bad if you're smart about what you're drawing and how you want to achieve that.
 
 CSS approaches do lend themselves to writing some tedious code. It might be easier in SASS, but I'm unsure. If you want to make the performance budget for it, JavaScript probably makes it much simpler.
-
-
 
 ## Section Header
 
