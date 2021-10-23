@@ -671,7 +671,15 @@ pre {
 }
 pre code {
 	overflow-x: auto;
-	white-space: break-spaces;
+	white-space: pre-wrap;
+}
+.int p {
+	word-wrap: break-word;
+	word-break: break-word;
+	-ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
 }
 /*End Internal page styles*/
 
