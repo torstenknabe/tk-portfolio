@@ -126,7 +126,7 @@ a:hover {
 .skip-link {
 	font-size: 1rem;
 	line-height: 1.5;
-	color: var(--body-color);
+	color: var(--light-color);
 	text-decoration: underline;
 	background: 0 0;
 	left: 0;
@@ -138,13 +138,17 @@ a:hover {
 }
 
 .skip-link:focus {
-  background: var(--light-color);
+  background: var(--secondary-blue);
   left: 0;
   position: absolute;
   top: 0;
   transition: .15s ease-in-out;
-  outline: .25rem dotted var(--primary-purple);
+  outline: .25rem dotted var(--primary-orange);
 	outline-offset: 0;
+}
+
+.skip-link:visited {
+	color: var(--light-color);
 }
 
 .skip-link.bottom {
