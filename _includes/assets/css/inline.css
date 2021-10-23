@@ -701,6 +701,10 @@ pre code {
 	background-color: var(--light-color);
 	padding: 1rem;
 }
+.int img,
+.frame-content img {
+	max-width: 100%;
+}
 
 /*End Internal page styles*/
 
