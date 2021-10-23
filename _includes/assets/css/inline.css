@@ -663,6 +663,11 @@ textarea {
 	max-width: 200px;
 	margin: 1rem;
 }
+code {
+	background-color: var(--primary-yellow);
+	color: var(--primary-red);
+	font-size: 80%;
+}
 pre {
 	background-color: var(--body-color);
 	padding: 1rem;
@@ -676,6 +681,13 @@ pre {
 pre code {
 	overflow-x: auto;
 	white-space: pre-wrap;
+	display: block;
+	min-width: 100px;
+	max-width: 100%;
+	min-height: 100px;
+	background-color: var(--body-color);
+	color: var(--light-color);
+	font-size: 100%;
 }
 .int p {
 	word-wrap: break-word;
@@ -685,6 +697,7 @@ pre code {
   -webkit-hyphens: auto;
   hyphens: auto;
 }
+
 /*End Internal page styles*/
 
 /*Media queries*/
