@@ -697,6 +697,10 @@ pre code {
   -webkit-hyphens: auto;
   hyphens: auto;
 }
+.frame-content {
+	background-color: var(--light-color);
+	padding: 1rem;
+}
 
 /*End Internal page styles*/
 
