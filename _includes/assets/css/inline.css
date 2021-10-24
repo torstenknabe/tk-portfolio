@@ -680,7 +680,7 @@ pre {
 }
 pre code {
 	overflow-x: auto;
-	white-space: pre-wrap;
+	white-space: pre;
 	display: block;
 	min-width: 100px;
 	max-width: 100%;
