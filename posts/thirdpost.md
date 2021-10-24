@@ -16,53 +16,53 @@ As such, I reached for Illustrator first and drew out my design. Then I exported
 
 ```
 <svg id="tk-logo" data-name="Layer 1" role="decorative" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 24 24">
-							  <!-- Middle T vertical line -->
-							  <line class="tk-logo lines brush" id="vtop" x1="12" x2="12" y2="24"/>
-							  <line class="tk-logo lines" id="vtop2" x1="12" x2="12" y2="24"/>
-							  <line class="tk-logo lines brush" id="vtop3" x1="12" x2="12" y2="24"/>
-							  <line class="tk-logo lines" id="vtop4" x1="12" x2="12" y2="24"/>
-							  <line class="tk-logo lines" id="vtop5" x1="12" x2="12" y2="24"/>
-							  <line class="tk-logo lines" id="vtop6" x1="12" x2="12" y2="24"/>
-							  <!-- Top T horizontal line -->
-							  <line class="tk-logo lines brush" id="htop" y1="0.5" x2="24" y2="0.5"/>
-							  <line class="tk-logo lines" id="htop2" y1="0.5" x2="24" y2="0.5"/>
-							   <line class="tk-logo lines" id="htop3" y1="0.5" x2="24" y2="0.5"/>
-							  <line class="tk-logo lines" id="htop4" y1="0.5" x2="24" y2="0.5"/>
-							  <line class="tk-logo lines" id="htop5" y1="0.5" x2="24" y2="0.5"/>
-							  <line class="tk-logo lines" id="htop6" y1="0.5" x2="24" y2="0.5"/>
-							  <!-- Bottom O ellipse -->
-							  <ellipse class="tk-logo ellipse brush" id="efull" cx="12" cy="17.75" rx="11.5" ry="5.75"/>
-							  <ellipse class="tk-logo ellipse" id="efull2" cx="12" cy="17.75" rx="11.5" ry="5.75"/>
-							  <!-- Bottom R diagonal line -->
-							  <line class="tk-logo diagonal" id="dfull" x1="12.5" y1="12.5" x2="23.5" y2="23.5"/>
-							  <line class="tk-logo diagonal" id="dfull2" x1="12.5" y1="12.5" x2="23.5" y2="23.5"/>
-							  <!-- Middle E Horizontal Line -->
-							  <line class="tk-logo lines" id="hcenter" y1="12" x2="24" y2="12"/>
-							  <line class="tk-logo lines" id="hcenter2" y1="12" x2="24" y2="12"/>
-							  <!-- Bottom E Horizontal Line -->
-							  <line class="tk-logo lines" id="hbottom" y1="23.5" x2="24" y2="23.5"/>
-							  <line class="tk-logo lines" id="hbottom2" y1="23.5" x2="24" y2="23.5"/>
-							  <!-- Left N Vertical Line -->
-							  <line class="tk-logo lines" id="vleft" x1="0.5" x2="0.5" y2="24"/>
-							  <line class="tk-logo lines" id="vleft2" x1="0.5" x2="0.5" y2="24"/>
-							  <line class="tk-logo lines" id="vleft3" x1="0.5" x2="0.5" y2="24"/>
-							  <line class="tk-logo lines" id="vleft4" x1="0.5" x2="0.5" y2="24"/>
-							  <!-- Right N Vertical Line -->
-							  <line class="tk-logo lines" id="vright" x1="23.5" x2="23.5" y2="24"/>
-							  <line class="tk-logo lines" id="vright2" x1="23.5" x2="23.5" y2="24"/>
-							  <!-- Middle N Diagonal Line -->
-							  <line class="tk-logo diagonal" id="dhalf" x1="0.5" y1="0.5" x2="23.5" y2="23.5"/>
-							  <line class="tk-logo diagonal" id="dhalf2" x1="0.5" y1="0.5" x2="23.5" y2="23.5"/>
-							  <!-- Top R half ellipse -->
-							  <path class="tk-logo ellipse" id="etopright" d="M12,.5c6.35,0,11.5,2.57,11.5,5.75S18.42,12,12.13,12"/>
-							  <path class="tk-logo ellipse" id="etopright2" d="M12,.5c6.35,0,11.5,2.57,11.5,5.75S18.42,12,12.13,12"/>
-							  <!-- Top S Left half ellipse -->
-							  <path class="tk-logo ellipse" id="ehalfleft" d="M12,.5C5.65.5.5,3.07.5,6.25S5.58,12,11.87,12"/>
-							  <path class="tk-logo ellipse" id="ehalfleft2" d="M12,.5C5.65.5.5,3.07.5,6.25S5.58,12,11.87,12"/>
-							  <!-- Bottom S right half ellipse -->
-							  <path class="tk-logo ellipse" id="ebottomright" d="M12,12c6.35,0,11.5,2.57,11.5,5.75s-5.08,5.71-11.37,5.75"/>
-							  <path class="tk-logo ellipse" id="ebottomright2" d="M12,12c6.35,0,11.5,2.57,11.5,5.75s-5.08,5.71-11.37,5.75"/>
-							</svg>
+  <!-- Middle T vertical line -->
+  <line class="tk-logo lines brush" id="vtop" x1="12" x2="12" y2="24"/>
+  <line class="tk-logo lines" id="vtop2" x1="12" x2="12" y2="24"/>
+  <line class="tk-logo lines brush" id="vtop3" x1="12" x2="12" y2="24"/>
+  <line class="tk-logo lines" id="vtop4" x1="12" x2="12" y2="24"/>
+  <line class="tk-logo lines" id="vtop5" x1="12" x2="12" y2="24"/>
+  <line class="tk-logo lines" id="vtop6" x1="12" x2="12" y2="24"/>
+  <!-- Top T horizontal line -->
+  <line class="tk-logo lines brush" id="htop" y1="0.5" x2="24" y2="0.5"/>
+  <line class="tk-logo lines" id="htop2" y1="0.5" x2="24" y2="0.5"/>
+   <line class="tk-logo lines" id="htop3" y1="0.5" x2="24" y2="0.5"/>
+  <line class="tk-logo lines" id="htop4" y1="0.5" x2="24" y2="0.5"/>
+  <line class="tk-logo lines" id="htop5" y1="0.5" x2="24" y2="0.5"/>
+  <line class="tk-logo lines" id="htop6" y1="0.5" x2="24" y2="0.5"/>
+  <!-- Bottom O ellipse -->
+  <ellipse class="tk-logo ellipse brush" id="efull" cx="12" cy="17.75" rx="11.5" ry="5.75"/>
+  <ellipse class="tk-logo ellipse" id="efull2" cx="12" cy="17.75" rx="11.5" ry="5.75"/>
+  <!-- Bottom R diagonal line -->
+  <line class="tk-logo diagonal" id="dfull" x1="12.5" y1="12.5" x2="23.5" y2="23.5"/>
+  <line class="tk-logo diagonal" id="dfull2" x1="12.5" y1="12.5" x2="23.5" y2="23.5"/>
+  <!-- Middle E Horizontal Line -->
+  <line class="tk-logo lines" id="hcenter" y1="12" x2="24" y2="12"/>
+  <line class="tk-logo lines" id="hcenter2" y1="12" x2="24" y2="12"/>
+  <!-- Bottom E Horizontal Line -->
+  <line class="tk-logo lines" id="hbottom" y1="23.5" x2="24" y2="23.5"/>
+  <line class="tk-logo lines" id="hbottom2" y1="23.5" x2="24" y2="23.5"/>
+  <!-- Left N Vertical Line -->
+  <line class="tk-logo lines" id="vleft" x1="0.5" x2="0.5" y2="24"/>
+  <line class="tk-logo lines" id="vleft2" x1="0.5" x2="0.5" y2="24"/>
+  <line class="tk-logo lines" id="vleft3" x1="0.5" x2="0.5" y2="24"/>
+  <line class="tk-logo lines" id="vleft4" x1="0.5" x2="0.5" y2="24"/>
+  <!-- Right N Vertical Line -->
+  <line class="tk-logo lines" id="vright" x1="23.5" x2="23.5" y2="24"/>
+  <line class="tk-logo lines" id="vright2" x1="23.5" x2="23.5" y2="24"/>
+  <!-- Middle N Diagonal Line -->
+  <line class="tk-logo diagonal" id="dhalf" x1="0.5" y1="0.5" x2="23.5" y2="23.5"/>
+  <line class="tk-logo diagonal" id="dhalf2" x1="0.5" y1="0.5" x2="23.5" y2="23.5"/>
+  <!-- Top R half ellipse -->
+  <path class="tk-logo ellipse" id="etopright" d="M12,.5c6.35,0,11.5,2.57,11.5,5.75S18.42,12,12.13,12"/>
+  <path class="tk-logo ellipse" id="etopright2" d="M12,.5c6.35,0,11.5,2.57,11.5,5.75S18.42,12,12.13,12"/>
+  <!-- Top S Left half ellipse -->
+  <path class="tk-logo ellipse" id="ehalfleft" d="M12,.5C5.65.5.5,3.07.5,6.25S5.58,12,11.87,12"/>
+  <path class="tk-logo ellipse" id="ehalfleft2" d="M12,.5C5.65.5.5,3.07.5,6.25S5.58,12,11.87,12"/>
+  <!-- Bottom S right half ellipse -->
+  <path class="tk-logo ellipse" id="ebottomright" d="M12,12c6.35,0,11.5,2.57,11.5,5.75s-5.08,5.71-11.37,5.75"/>
+  <path class="tk-logo ellipse" id="ebottomright2" d="M12,12c6.35,0,11.5,2.57,11.5,5.75s-5.08,5.71-11.37,5.75"/>
+</svg>
 ```
 
 One inspiration for me was [Cassie Evans](https://www.cassie.codes/)' logo and the animation on her site. I really like what she did. Her logo and her [discussion of her animation process and usage of SVG](https://www.cassie.codes/posts/creating-my-logo-animation/) was incredibly informative for me. She took a JavaScript approach to animation with [GSAP.](https://greensock.com/gsap/)
