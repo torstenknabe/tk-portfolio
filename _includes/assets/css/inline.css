@@ -671,7 +671,7 @@ code {
 pre {
 	background-color: var(--body-color);
 	padding: 1rem;
-	max-width: 100%;
+	max-width: calc(100vw - 22rem);
 	overflow: auto;
 	color: var(--light-color);
 	tab-size: 2;
@@ -1101,5 +1101,8 @@ pre code {
 	.writing .articles-holder,
 	.top8 .myspace-text {
 		margin-top: 3rem;
+	}
+	.int pre {
+		max-width: calc(100vw - 4rem);
 	}
 }
