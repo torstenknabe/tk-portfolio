@@ -23,4 +23,4 @@ I really like symmetry and on tiktok (Where I get inspired by really creative co
 
 I started with paper and pen to iterate quickly on varying patterns. My goal was to achieve a symmetric design that incorporated each letter of my name. I got stuck for a bit on symmetry, what finally got me headed in the right direction is that I broke down each letter into constituent shapes that were as simple as possible. I discovered that my first name has 5 vertical lines, 5 horizontal lines, 2 diagonal lines, 2 left semi-circles, 1 right semi-circle, and 1 full circle. That got me to experiment with just those specific shapes in different orders and overlapping, and then to form those together into a cohesive design.
 
-I ended up with a box with a +, two ovals, and a diagonal line inside. This was pleasing to me as it is symmetrical, fits into an easy to manipulate area, and achieves me goals for balance.
+I ended up with a box with a +, two ovals, and a diagonal line inside. This was pleasing to me as it is symmetrical, fits into an easy to manipulate area, and achieves my goals for balance.
