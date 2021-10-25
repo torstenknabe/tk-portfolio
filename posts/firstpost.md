@@ -1,10 +1,12 @@
 ---
 title: My logo design inspiration
-metaDescription: I found an awesome graphic designer on tiktok who inspired me to make a logo using the letters in my first name.
+metaDescription: This is a sample meta description. If one is not present in
+  your page/post's front matter, the default metadata.desciption will be used
+  instead.
 date: 2021-10-07T18:42:01.802Z
 author: Torsten Knabe
-summary: I found an awesome graphic designer on tiktok who inspired me to make a
-  logo using the letters in my first name.
+summary: I follow an awesome graphic designer on tiktok who inspired me to make
+  a logo using the letters in my first name.
 tags:
   - portfolio
   - design
