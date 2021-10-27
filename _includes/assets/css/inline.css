@@ -999,7 +999,6 @@ pre code {
 		position: relative;
 	}
 	.js .open-nav	.header-holder {
-		max-height: 100vh;
 		overflow: auto;
 	}
 	.js .open-nav .main-content {
