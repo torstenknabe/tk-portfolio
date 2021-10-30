@@ -1002,7 +1002,6 @@ pre code {
 		overflow: auto;
 	}
 	.js .open-nav .main-content {
-		max-height: 100vh;
 		overflow: hidden;
 	}
 
