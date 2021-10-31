@@ -10,9 +10,9 @@
   <meta name="title" content="{{ renderData.title or title or metadata.title }}"/>
   <meta property="og:title" content="{{ renderData.title or title or metadata.title }}"/>
   <meta name="twitter:title" content="{{ renderData.title or title or metadata.title }}"/>
-  <meta property="og:description" content="{{ metaDescription or renderData.metaDescription or metadata.description }}" />
-  <meta name="twitter:description" content="{{ metaDescription or renderData.metaDescription or metadata.description }}" />
-  <meta name="description" content="{{ metaDescription or renderData.metaDescription or metadata.description }}">
+  <meta property="og:description" content="{{ metaDescription or summary or renderData.metaDescription or metadata.description }}" />
+  <meta name="twitter:description" content="{{ metaDescription or summary or renderData.metaDescription or metadata.description }}" />
+  <meta name="description" content="{{ metaDescription or summary or renderData.metaDescription or metadata.description }}">
   <meta property="og:image" content="https://torstenknabe.com/static/img/facebook-meta.png" />
   <meta name="twitter:image" content="https://torstenknabe.com/static/img/twitter-meta.png" />
   <meta name="twitter:card" content="summary_large_image" />

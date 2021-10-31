@@ -1,6 +1,6 @@
 ---
 title: About me
-metaDescription: About page for Torsten Knabe with a professional biography.
+metaDescription: Professional Biography for Torsten Knabe.
 date: 2021-06-16T23:00:00.000Z
 permalink: /about/index.html
 eleventyNavigation:
