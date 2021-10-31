@@ -1,9 +1,7 @@
 ---
 layout: layouts/contact.njk
 title: Get in touch
-metaDescription: This is a sample meta description. If one is not present in
-  your page/post's front matter, the default metadata.desciption will be used
-  instead.
+metaDescription: Contact Torsten Knabe. You can use the contact form on this site or send him an email.
 section: contact
 date: 2021-06-16T16:00:00.000Z
 permalink: /contact/index.html

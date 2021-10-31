@@ -1,7 +1,8 @@
 ---
 layout: layouts/home.njk
 title: Welcome in!
-date: 2016-01-01T00:00:00.000Z
+metaDescription: Welcome to Torsten Knabe's website. This is his base for the web and where you can find a repository of his knowledge. Think how to articles, recipes, and helpful reminders.
+date: 2021-05-05T00:00:00.000Z
 permalink: /
 eleventyNavigation:
   key: Home
