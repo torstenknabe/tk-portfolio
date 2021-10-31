@@ -14,7 +14,7 @@ Now that I had a logo design sketched out on paper that I liked, it was time to 
 
 As such, I reached for Illustrator first and drew out my design. Then I exported it to see what that looks like in code. I ended up switching a couple times how exactly I drew the lines, to get the desired SVG. I set a very small 24 x 24 canvas because I wanted to make the math easy on myself. I also made sure to use shapes in Illustrator that would translate well to SVG like `<line>` and `<ellipse>`. What I didn't want to end up with was markup that would be difficult to work with, with ugly paths or disjointed shapes. I definitely had to try multiple times and then massage the SVG by hand to make sure that I ended up with what I wanted.
 
-```
+```svg
 <svg id="tk-logo" data-name="Layer 1" role="decorative" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 24 24">
   <!-- Middle T vertical line -->
   <line class="tk-logo lines brush" id="vtop" x1="12" x2="12" y2="24"/>
@@ -26,7 +26,7 @@ As such, I reached for Illustrator first and drew out my design. Then I exported
   <!-- Top T horizontal line -->
   <line class="tk-logo lines brush" id="htop" y1="0.5" x2="24" y2="0.5"/>
   <line class="tk-logo lines" id="htop2" y1="0.5" x2="24" y2="0.5"/>
-   <line class="tk-logo lines" id="htop3" y1="0.5" x2="24" y2="0.5"/>
+  <line class="tk-logo lines" id="htop3" y1="0.5" x2="24" y2="0.5"/>
   <line class="tk-logo lines" id="htop4" y1="0.5" x2="24" y2="0.5"/>
   <line class="tk-logo lines" id="htop5" y1="0.5" x2="24" y2="0.5"/>
   <line class="tk-logo lines" id="htop6" y1="0.5" x2="24" y2="0.5"/>

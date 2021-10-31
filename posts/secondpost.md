@@ -13,7 +13,7 @@ On the footer of this site you may see that I have my email address available. I
 
 I got this approach from [tatestrickland.com](https://tatestrickland.com) although it appears that he has since removed it from his current site. What he was doing was the below:
 
-```
+```html
 <li>
 <script type="text/javascript">
   var part1 = "name";
@@ -30,7 +30,7 @@ That very helpful document showed me what I was doing wrong - "Don't write unbal
 
 Fortunately, that's an easy enough fix. Now my code looked like below:
 
-```
+```html
 <li>
 <script type="text/javascript">
   const part1 = "torsten.knabe";
@@ -43,7 +43,7 @@ Fortunately, that's an easy enough fix. Now my code looked like below:
 
 But then I thought about, well what happens if JavaScript is disabled - I'd be left with an empty `<li>` and that creates an accessibility error. As such, I then included the `<li>` in my script so I'm left with:
 
-```
+```html
 <script type="text/javascript">
   const part1 = "torsten.knabe";
   const part2 = "gmail.com";

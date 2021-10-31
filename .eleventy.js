@@ -3,8 +3,19 @@ const CleanCSS = require("clean-css");
 const UglifyJS = require("uglify-es");
 const htmlmin = require("html-minifier");
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
+const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 
 module.exports = function(eleventyConfig) {
+  // Syntax Highlighter plugin https://www.11ty.dev/docs/plugins/syntaxhighlight/
+  eleventyConfig.addPlugin(syntaxHighlight, {
+    templateFormats: ["*"],
+    preAttributes: {
+      tabindex: 0
+    },
+    codeAttributes: {
+      tabindex: 0
+    },
+  });
 
   // Eleventy Navigation https://www.11ty.dev/docs/plugins/navigation/
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
