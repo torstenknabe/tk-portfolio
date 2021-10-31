@@ -3,7 +3,7 @@ title: Making accessible, responsive code blocks
 date: 2021-10-31T19:01:06.168Z
 author: Torsten Knabe
 summary: I added code blocks to my site with markdown but I had to figure out
-  how to make them responsive, and accessible.
+  how to make them responsive and accessible.
 tags:
   - eleventy
   - markdown
