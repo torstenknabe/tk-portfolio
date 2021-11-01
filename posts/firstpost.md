@@ -21,8 +21,8 @@ I really like symmetry and on tiktok (Where I get inspired by really creative co
 
 <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@cami.creative/video/6855427385844600070" data-video-id="6855427385844600070" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@cami.creative" href="https://www.tiktok.com/@cami.creative">@cami.creative</a> <p>Reply to @sarahdubs4 <a title="namelogo" target="_blank" href="https://www.tiktok.com/tag/namelogo">##namelogo</a> for Elise! this one has kind of a 3D feel! (also my color-coordinated feed makes me SO happy) <a title="logo" target="_blank" href="https://www.tiktok.com/tag/logo">##logo</a> <a title="logodesign" target="_blank" href="https://www.tiktok.com/tag/logodesign">##logodesign</a> <a title="fyp" target="_blank" href="https://www.tiktok.com/tag/fyp">##fyp</a></p> <a target="_blank" title="♬ ily (i love you baby) - Surf Mesa" href="https://www.tiktok.com/music/ily-i-love-you-baby-6798329661525854210">♬ ily (i love you baby) - Surf Mesa</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
 
-![Drawings with the letters T.O.R.S.T.E.N.](/static/img/pxl_20211023_230720469.jpg)
-
 I started with paper and pen to iterate quickly on varying patterns. My goal was to achieve a symmetric design that incorporated each letter of my name. I got stuck for a bit on symmetry, what finally got me headed in the right direction is that I broke down each letter into constituent shapes that were as simple as possible. I discovered that my first name has 5 vertical lines, 5 horizontal lines, 2 diagonal lines, 2 left semi-circles, 1 right semi-circle, and 1 full circle. That got me to experiment with just those specific shapes in different orders and overlapping, and then to form those together into a cohesive design.
+
+![Drawings with the letters T.O.R.S.T.E.N.](/static/img/pxl_20211023_230720469.jpg)
 
 I ended up with a box with a +, two ovals, and a diagonal line inside. This was pleasing to me as it is symmetrical, fits into an easy to manipulate area, and achieves my goals for balance.
