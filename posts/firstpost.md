@@ -1,10 +1,12 @@
 ---
 title: My logo design inspiration
-metaDescription: I found an awesome graphic designer on tiktok who inspired me to make a logo using the letters in my first name.
+metaDescription: This is a sample meta description. If one is not present in
+  your page/post's front matter, the default metadata.desciption will be used
+  instead.
 date: 2021-10-07T18:42:01.802Z
 author: Torsten Knabe
-summary: I found an awesome graphic designer on tiktok who inspired me to make a
-  logo using the letters in my first name.
+summary: I follow an awesome graphic designer on tiktok who inspired me to make
+  a logo using the letters in my first name.
 tags:
   - portfolio
   - design
@@ -16,6 +18,8 @@ Mostly this has worked well as a process, but sometimes at the last minute a new
 Fortunately/Unfortunately when designing a logo for myself, I don't have different stakeholders to engage with instead I get to be both the designer and the decision maker. For myself, I looked to different inspiration online. I have an eclectic group of interests and topics that I want to display on this site, but I also have an uncommon name for an American. As such, I decided to use the letters in my name as a base to work off of since that's something that is uniquely me and unchanging.
 
 I really like symmetry and on tiktok (Where I get inspired by really creative content) I ran across [Cami Creative](https://www.tiktok.com/@cami.creative) who turns different words and names into shapes. I really enjoyed her videos, and decided that I could adapt her style to making an animated logo with SVG and CSS for my name.
+
+<blockquote class="tiktok-embed" cite="https://www.tiktok.com/@cami.creative/video/6855427385844600070" data-video-id="6855427385844600070" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@cami.creative" href="https://www.tiktok.com/@cami.creative">@cami.creative</a> <p>Reply to @sarahdubs4 <a title="namelogo" target="_blank" href="https://www.tiktok.com/tag/namelogo">##namelogo</a> for Elise! this one has kind of a 3D feel! (also my color-coordinated feed makes me SO happy) <a title="logo" target="_blank" href="https://www.tiktok.com/tag/logo">##logo</a> <a title="logodesign" target="_blank" href="https://www.tiktok.com/tag/logodesign">##logodesign</a> <a title="fyp" target="_blank" href="https://www.tiktok.com/tag/fyp">##fyp</a></p> <a target="_blank" title="♬ ily (i love you baby) - Surf Mesa" href="https://www.tiktok.com/music/ily-i-love-you-baby-6798329661525854210">♬ ily (i love you baby) - Surf Mesa</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
 
 ![Drawings with the letters T.O.R.S.T.E.N.](/static/img/pxl_20211023_230720469.jpg)
 
