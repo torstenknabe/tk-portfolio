@@ -35,8 +35,8 @@
   font-weight: 400;
   font-display: swap;
   src: local(''),
-       url('../fonts/source-sans-pro-v14-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/source-sans-pro-v14-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+       url('_includes/assets/fonts/source-sans-pro-v14-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('_includes/assets/fonts/source-sans-pro-v14-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* source-sans-pro-italic - latin */
 @font-face {
@@ -45,8 +45,8 @@
   font-weight: 400;
   font-display: swap;
   src: local(''),
-       url('../fonts/source-sans-pro-v14-latin-italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/source-sans-pro-v14-latin-italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+       url('_includes/assets/fonts/source-sans-pro-v14-latin-italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('_includes/assets/fonts/source-sans-pro-v14-latin-italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* source-sans-pro-600 - latin */
 @font-face {
@@ -55,8 +55,8 @@
   font-weight: 600;
   font-display: swap;
   src: local(''),
-       url('../fonts/source-sans-pro-v14-latin-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/source-sans-pro-v14-latin-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+       url('_includes/assets/fonts/source-sans-pro-v14-latin-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('_includes/assets/fonts/source-sans-pro-v14-latin-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* source-sans-pro-600italic - latin */
 @font-face {
@@ -65,8 +65,8 @@
   font-weight: 600;
   font-display: swap;
   src: local(''),
-       url('../fonts/source-sans-pro-v14-latin-600italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/source-sans-pro-v14-latin-600italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+       url('_includes/assets/fonts/source-sans-pro-v14-latin-600italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('_includes/assets/fonts/source-sans-pro-v14-latin-600italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* cabin-regular - latin */
@@ -76,8 +76,8 @@
   font-weight: 400;
   font-display: swap;
   src: local(''),
-       url('../fonts/cabin-v18-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/cabin-v18-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+       url('_includes/assets/fonts/cabin-v18-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('_includes/assets/fonts/cabin-v18-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* cabin-600 - latin */
 @font-face {
@@ -86,8 +86,8 @@
   font-weight: 600;
   font-display: swap;
   src: local(''),
-       url('../fonts/cabin-v18-latin-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/cabin-v18-latin-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+       url('_includes/assets/fonts/cabin-v18-latin-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('_includes/assets/fonts/cabin-v18-latin-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* cabin-italic - latin */
 @font-face {
@@ -96,8 +96,8 @@
   font-weight: 400;
   font-display: swap;
   src: local(''),
-       url('../fonts/cabin-v18-latin-italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/cabin-v18-latin-italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+       url('_includes/assets/fonts/cabin-v18-latin-italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('_includes/assets/fonts/cabin-v18-latin-italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* ubuntu-500 - latin */
@@ -108,8 +108,8 @@
   font-display: swap;
   unicode-range:  U+0061, U+0062,  U+006B, U+006E,  U+006F, U+0072-0074;
   src: local(''),
-       url('../fonts/ubuntu-v15-latin-500.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/ubuntu-v15-latin-500.woff') format('woff'), /* Modern Browsers */
+       url('_includes/assets/fonts/ubuntu-v15-latin-500.woff2') format('woff2'), /* Super Modern Browsers */
+       url('_includes/assets/fonts/ubuntu-v15-latin-500.woff') format('woff'), /* Modern Browsers */
 }
 
 body {
