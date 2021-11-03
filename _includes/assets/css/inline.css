@@ -1056,9 +1056,9 @@ pre code {
 	.wrapper {
 		grid-template-columns:  1fr;
 	}
-	.no-js .main-content {
+/*	.no-js .main-content {
 		grid-row: 2;
-	}
+	}*/
 	.main-content {
 		grid-column: unset;
 	}
