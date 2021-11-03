@@ -106,7 +106,8 @@
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  unicode-range:  U+0061, U+0062,  U+006B, U+006E,  U+006F, U+0072-0074;
+  /*Unicode range for letters TKabenorst */
+  unicode-range: U+0054, U+004B, U+0061, U+0062, U+006E,  U+006F, U+0072-0074;
   src: local(''),
        url('/_includes/assets/fonts/ubuntu-v15-latin-500.woff2') format('woff2'), /* Super Modern Browsers */
        url('/_includes/assets/fonts/ubuntu-v15-latin-500.woff') format('woff'), /* Modern Browsers */
