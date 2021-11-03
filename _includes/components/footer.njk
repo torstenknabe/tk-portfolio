@@ -28,29 +28,18 @@
         </script> #}
         <script type="text/javascript">
           document.body.onload = addEmail;
-
           function addEmail () {
-
-          const newLi = document.createElement("li");
-
-          const newLink = document.createElement("a");
-
-          const newLinkText = document.createTextNode("Email");
-
-          newLink.appendChild(newLinkText);
-
-          const part1 = "torsten.knabe";
-          const part2 = "gmail.com";
-
-          newLink.setAttribute("href", "mailto:" + part1 + "@" + part2);
-
-          newLi.appendChild(newLink);
-
-          const existingLi = document.getElementById("contact");
-          const parentUl = existingLi.parentNode;
-
-          parentUl.insertBefore(newLi, existingLi);
-
+            const newLi = document.createElement("li");
+            const newLink = document.createElement("a");
+            const newLinkText = document.createTextNode("Email");
+            newLink.appendChild(newLinkText);
+            const part1 = "torsten.knabe";
+            const part2 = "gmail.com";
+            newLink.setAttribute("href", "mailto:" + part1 + "@" + part2);
+            newLi.appendChild(newLink);
+            const existingLi = document.getElementById("contact");
+            const parentUl = existingLi.parentNode;
+            parentUl.insertBefore(newLi, existingLi);
           }
         </script>
         <li id="contact"><a href="/contact">Contact</a></li>
