@@ -27,5 +27,5 @@
     {% include "assets/css/inline.css" %}
   {% endset %}
   <style>{{ css | cssmin | safe }}</style>
-  <link href="/_includes/assets/css/prism-a11y-dark.css" rel="stylesheet">
+  <link href="/_includes/assets/css/prism-a11y-dark.css" rel="stylesheet" media="print" onload="this.media='all'">
 </head>
