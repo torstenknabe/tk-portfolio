@@ -4,6 +4,8 @@ date: 2021-10-08T16:45:07.498Z
 author: Torsten Knabe
 summary: I've attempted to hide my email address from bots using some clever JS,
   but still make it available to most humans.
+description: I've attempted to hide my email address from bots using some clever
+  JS, but still make it available to most humans.
 tags:
   - Programming
   - JavaScript
@@ -52,4 +54,31 @@ But then I thought about, well what happens if JavaScript is disabled - I'd be l
 </script>
 ```
 
-This means that if JS is disabled, then the page simply skips that entire list item instead of leaving the user with some incorrect HTML. This is somewhat unfortunate, but I consider it a progressive enhancement - every page on my site in the footer has a contact form, so there is still an equivalent way to contact me even if you have JS disabled.
+### Rewriting for Performance
+
+After I implemented the above solution and started performance optimization testing, I re-remembered that using document.write is a bad practice because it blocks the main thread. As such, you don't want to use it unless absolutely necessary. As this is definitely not absolutely necessary, and what it renders is in the footer of the page, I can rewrite it to use different JavaScript methods that don't block the main thread.
+
+A bit of perusing MDN gave me two helpful articles. The first for [document.createElement](https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement) which gave me the main outline for what I want to do - on load, run a function that creates a new element. However, what I need to do is to create two HTML elements - an `<li>` and an `<a>`. This brought me to [Node.InsertBefore()](https://developer.mozilla.org/en-US/docs/Web/API/Node/insertBefore) which talks about how to insert elements inside of each other. Modifying the example code on those two pages gets me the below:
+
+```html
+<script type="text/javascript">
+  document.body.onload = addEmail;
+  function addEmail () {
+    const newLi = document.createElement("li");
+    const newLink = document.createElement("a");
+    const newLinkText = document.createTextNode("Email");
+    newLink.appendChild(newLinkText);
+    const part1 = "torsten.knabe";
+    const part2 = "gmail.com";
+    newLink.setAttribute("href", "mailto:" + part1 + "@" + part2);
+    newLi.appendChild(newLink);
+    const existingLi = document.getElementById("contact");
+    const parentUl = existingLi.parentNode;
+    parentUl.insertBefore(newLi, existingLi);
+  }
+</script>
+```
+
+Now I have some JS that accomplishes the exact same thing as document.write, but it doesn't block the main thread so it's more performant, even though it is longer.
+
+What I'm left with is that if JS is disabled, then the page simply skips that entire list item instead of leaving the user with some incorrect HTML. This is somewhat unfortunate, but I consider it a progressive enhancement - every page on my site in the footer has a contact form, so there is still an equivalent way to contact me even if you have JS disabled.
