@@ -375,7 +375,7 @@ textarea {
 	font-family: var(--logo-font);
 	color: var(--light-color);
 	font-size: 2rem;
-	font-weight: 500;
+	font-weight: normal;
 }
 
 .nav ul {
