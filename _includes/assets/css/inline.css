@@ -14,7 +14,7 @@
 	--secondary-orange: #4E3818;
 	--body-color: #333;
 	--light-color: #fff;
-	--logo-font: 'Ubuntu', 'arial', sans-serif;
+	--logo-font: 'ubuntu', 'arial', sans-serif;
 	--header-font: 'Cabin', 'arial', sans-serif;
 	--body-font: 'Source Sans Pro', 'arial', sans-serif;
 }
@@ -102,9 +102,9 @@
 
 /* ubuntu-500 - latin */
 @font-face {
-  font-family: 'Ubuntu';
+  font-family: 'ubuntu';
   font-style: normal;
-  font-weight: 500;
+  font-weight: normal;
   font-display: swap;
   /*Unicode range for letters TKabenorst */
  /* unicode-range: U+0054, U+004B, U+0061, U+0062, U+006E,  U+006F, U+0072-0074;*/
@@ -478,7 +478,7 @@ textarea {
   gap: 1rem;
   text-align: center;
   box-shadow: 5px 5px 20px 1px rgba(0,0,0,.3);
-  padding: 3rem;
+  padding: 4rem;
   margin: 3rem auto;
 }
 
