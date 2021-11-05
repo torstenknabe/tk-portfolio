@@ -5,6 +5,7 @@ metaDescription: This is a sample meta description. If one is not present in
   instead.
 date: 2021-06-16T23:00:00.000Z
 permalink: /about-old/index.html
+eleventyExcludeFromCollections: true
 # eleventyNavigation:
 #   order: 0
 #   key: old about
