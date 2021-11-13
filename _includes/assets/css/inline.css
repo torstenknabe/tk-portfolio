@@ -282,6 +282,7 @@ input, textarea {
 	display: block;
 	margin-bottom: 1em;
 	font-family: var(--body-font);
+	width: 100%;
 }
 
 label {

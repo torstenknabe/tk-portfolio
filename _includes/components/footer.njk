@@ -11,7 +11,7 @@
         <label class="important" for="first">First Name</label>
         <input class="important" id="first" type="text" name="first" />
         <label for="message">Message</label>
-        <textarea name="message" id="message"></textarea>
+        <textarea cols="1" rows="4" name="message" id="message"></textarea>
         <button type="submit" class="btn">
         Say hi</button>
       </fieldset>
@@ -20,12 +20,6 @@
       <ul>
         <li><a href="/">Home</a></li>
         <li><a href="/accessibility">Accessibility</a></li>
-       {#  <script type="text/javascript">
-          const part1 = "torsten.knabe";
-          const part2 = "gmail.com";
-          const part3 = "Email</a>";
-          document.write('<li><a href="mai' + 'lto:' + part1 + '@' + part2 + '">' + part3 + '</li>');
-        </script> #}
         <script type="text/javascript">
           document.body.onload = addEmail;
           function addEmail () {
