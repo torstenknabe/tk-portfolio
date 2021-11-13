@@ -9,8 +9,9 @@ tags:
   - markdown
   - a11y
   - JavaScript
+  - HTML  
   - CSS
-  - HTML
+
 ---
 As I started to write out different posts on this site, I realized that I wanted to add code examples to my posts so that I could show code that I'm discussing. My first thought was great, I can simply insert a code block in markdown and call it a day. Three back-tics to the rescue! ```` ``` ````. However, once I did that I quickly discovered that these code blocks were not responsive. On mobile they would break the responsiveness of the page and make it almost entirely unreadable because the width of the page jutted out to the width of the entire `<code>` element, which was invariably wider than the width of my screen.
 
