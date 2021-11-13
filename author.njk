@@ -16,7 +16,7 @@ renderData:
 	<div class="hero-container">
 		<h1 class="title-text"><span class="text-holder">{{ renderData.title | safe }}</span></h1>
 	</div>
-	<section class="base-section content">
+	<section class="base-section content blog">
 		<div class="container">
 				{% for post in collections.authors[author] | reverse %}
 					<article{% if post.page.url == url %} data-current="current item"{% endif %}>
