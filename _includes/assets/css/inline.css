@@ -790,6 +790,7 @@ pre code {
 	display: flex;
 	justify-content: flex-start;
 	gap: 1rem;
+	flex-wrap: wrap;
 	margin-bottom: 1rem;
 }
 
