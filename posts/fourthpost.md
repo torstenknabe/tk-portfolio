@@ -30,7 +30,7 @@ I use [Network Solutions](https://www.networksolutions.com/) as my domain name p
 11. The final step is the hardest one, you have to wait up to 24 hours for the DNS Time To Live (TTL) to expire.
 12. Once up to 24 hours has passed you can go back to Netlify and check to make sure that they have automatically provisioned a Let's Encrypt SSL certificate for your site.
 
-### Gotchas
+## Gotchas
 
 * When you're using custom nameservers, Network Solutions makes it look like something is wrong, it is not. On the Domain Names page in the Domain Details box, there is red icon that looks like something is off. That just means that the Network Solutions nameservers are off, which is exactly what you want.
 
