@@ -54,7 +54,7 @@ But then I thought about, well what happens if JavaScript is disabled - I'd be l
 </script>
 ```
 
-### Rewriting for Performance
+## Rewriting for Performance
 
 After I implemented the above solution and started performance optimization testing, I re-remembered that using document.write is a bad practice because it blocks the main thread. As such, you don't want to use it unless absolutely necessary. As this is definitely not absolutely necessary, and what it renders is in the footer of the page, I can rewrite it to use different JavaScript methods that don't block the main thread.
 
