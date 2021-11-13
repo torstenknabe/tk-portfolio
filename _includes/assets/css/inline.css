@@ -786,12 +786,16 @@ pre code {
   hyphens: auto;
 }
 .int .tags {
-	min-width: 2.75rem;
 	display: flex;
 	justify-content: flex-start;
 	gap: 1rem;
 	flex-wrap: wrap;
 	margin-bottom: 1rem;
+}
+
+.int .tags a {
+	min-width: 2.75rem;
+	display: inline-block;
 }
 
 .frame-content {
@@ -801,6 +805,44 @@ pre code {
 .int img,
 .frame-content img {
 	max-width: 100%;
+}
+
+.int .blog .container {
+	max-width: 70rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 1rem;
+}
+
+.int .blog article {
+	border-bottom: 2px solid var(--primary-green);
+	padding: 1rem;
+	position: relative;
+	z-index: 0;
+}
+
+.int .blog article::after {
+	content: '';
+	background-color: var(--primary-yellow);
+	height: 75%;
+	width: 75%;
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	bottom: 0;
+	transform: translateX(-50%);
+	z-index: -1;
+	border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
+}
+
+.int .blog article:nth-child(4n+1)::after,
+.int .blog article:nth-child(4n+4)::after {
+	border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
+}
+
+.int .blog article:nth-child(4n+2)::after,
+.int .blog article:nth-child(4n+3)::after {
+	border-radius: 30% 70% 70% 30% / 40% 60% 40% 60%;
 }
 
 /*End Internal page styles*/
@@ -1207,5 +1249,15 @@ pre code {
 	}
 	.int pre {
 		max-width: calc(100vw - 4rem);
+	}
+	.int .blog .container {
+		grid-template-columns: 1fr;
+	}
+	.int .blog article:nth-child(n)::after {
+		border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
+	}
+
+	.int .blog article:nth-child(2n)::after {
+		border-radius: 30% 70% 70% 30% / 40% 60% 40% 60%;
 	}
 }
