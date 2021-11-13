@@ -171,7 +171,7 @@ h6 {
   );
 }
 
-p {
+p, li, ul, a {
 	font-size: clamp(
     var(--fluid-type-min, 1rem),
     calc(1rem + var(--fluid-type-target, 3vw)),
@@ -785,9 +785,12 @@ pre code {
   -webkit-hyphens: auto;
   hyphens: auto;
 }
-.int article p:last-child a {
+.int .tags {
 	min-width: 2.75rem;
-	display: inline-block;
+	display: flex;
+	justify-content: flex-start;
+	gap: 1rem;
+	margin-bottom: 1rem;
 }
 
 .frame-content {
