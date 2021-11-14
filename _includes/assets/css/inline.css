@@ -815,7 +815,7 @@ pre code {
 }
 
 .int .blog article {
-	border-bottom: 2px solid var(--primary-green);
+	border-bottom: 2px solid var(--secondary-green);
 	padding: 1rem;
 	position: relative;
 	z-index: 0;
@@ -843,6 +843,10 @@ pre code {
 .int .blog article:nth-child(4n+2)::after,
 .int .blog article:nth-child(4n+3)::after {
 	border-radius: 30% 70% 70% 30% / 40% 60% 40% 60%;
+}
+
+.int .blog nav {
+	grid-column-start: span 2;
 }
 
 /*End Internal page styles*/
@@ -1259,5 +1263,86 @@ pre code {
 
 	.int .blog article:nth-child(2n)::after {
 		border-radius: 30% 70% 70% 30% / 40% 60% 40% 60%;
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--darkmode-purple: #D978CE;
+		--darkmode-primary-green: #88D56C;
+		--darkmode-secondary-green: #53AF31;
+		--primary-orange: #4E3818;
+		--secondary-orange: #CCA260;
+		--primary-yellow: #244D15;
+		--darkmode-blue: #6FA0C8;
+	}
+	*:focus,
+	.nav li a:focus,
+	.skip-link:focus {
+		outline-color: var(--light-color);
+	}
+
+	body {
+		color: var(--light-color);
+	}
+	a {
+		color: var(--darkmode-primary-green);
+	}
+	a:visited {
+		color: var(--darkmode-secondary-green);
+	}
+	input, textarea {
+		background-color: var(--body-color);
+		color: var(--light-color);
+	}
+	code {
+		color: var(--light-color);
+		background-color: var(--primary-red);
+	}
+	.btn:hover, .btn:focus {
+		border-color: var(--body-color);
+		background: var(--body-color);
+		color: var(--darkmode-blue);
+	}
+	.main-content {
+		background-color: var(--body-color);
+	}
+	.paintdrop a:visited {
+		color: var(--light-color);
+	}
+	.js .side-nav .nav-btn:focus, 
+	.js .side-nav .nav-btn:hover,
+	.paintdrop-box:first-child {
+		border-color: var(--light-color);
+	}
+	.icons svg {
+		--primary-purple: #D978CE;
+	}
+	.top8 a,
+	.top8 a:hover {
+		color: var(--darkmode-blue);
+	}
+	.top8 a:hover .top8-img,
+	.top8-img {
+		border-color: var(--darkmode-blue);
+	}
+	.top8 .tiktok h3::before {
+		content: url(/static/img/tiktok-light.svg);
+	}
+	.top8 .twitch h3::before {
+		content: url(/static/img/twitch-light.svg);
+	}
+	.top8 .instagram h3::before {
+		content: url(/static/img/instagram-light.svg);
+	}
+	.int .blog a,
+	.int .blog a:visited {
+		color: var(--light-color);
+	}
+	.int .blog article {
+		border-bottom-color: var(--light-color);
+	}
+	.int h2 {
+		color: var(--darkmode-purple);
 	}
 }

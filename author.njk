@@ -20,7 +20,7 @@ renderData:
 		<div class="container">
 				{% for post in collections.authors[author] | reverse %}
 					<article{% if post.page.url == url %} data-current="current item"{% endif %}>
-						<h3>
+						<h2 class="h3">
 							<a href="{{ post.page.url | url }}">
 								{% if post.title %}
 									{{ post.title }}
@@ -28,7 +28,7 @@ renderData:
 									Untitled
 								{% endif %}
 							</a>
-						</h3>
+						</h2>
 						{% if post.summary %}
 							<p>
 								{{ post.summary }}
@@ -40,14 +40,14 @@ renderData:
 							</time>
 						</p>
 						{% if post.tags %}
-							<p>
+							<ul class="tags styled-list">
 								{% for tag in post.tags %}
 					  			{%- if tag != "post" -%}
 					  				{% set tagUrl %}/tags/{{ tag }}/{% endset %}
-					  			<a href="{{ tagUrl | url }}" rel="tag">{{ tag }}</a>
+					  			<li><a href="{{ tagUrl | url }}" rel="tag">{{ tag }}</a></li>
 					  			{%- endif -%}
 								{% endfor %}
-							</p>
+							</ul>
 						{% endif %}
 					</article>
 				{% endfor %}

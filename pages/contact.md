@@ -9,4 +9,4 @@ eleventyNavigation:
   key: Contact
   order: 3
 ---
-[](https://twitter.com/torkna)Every page on this site includes a contact form in the footer if you want to contact me directly. However, you can also find me on twitter at [@torkna](https://twitter.com/torkna) if you want more short form updates on what I'm up to or thinking about.
+Every page on this site includes a contact form in the footer if you want to contact me directly. However, you can also find me on twitter at [@torkna](https://twitter.com/torkna) if you want more short form updates on what I'm up to or thinking about.

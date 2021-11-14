@@ -16,9 +16,9 @@ permalink: "authors/index.html"
     <div class="container">
       {% for author in pagination.items %}
         <article>
-          <h3>
+          <h2 class="h3">
             <a href="/authors/{{ author | slug }}">{{ author | safe }}</a>
-          </h3>
+          </h2>
         </article>
       {% endfor %}
       <nav>
