@@ -591,6 +591,10 @@ textarea {
 	margin: auto;
 }
 
+.writing .articles h2 {
+	margin-top: 0;
+}
+
 @media (min-width: 64em) {
 	.writing .articles {
 		max-width: 43%;
