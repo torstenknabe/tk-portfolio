@@ -4,19 +4,36 @@ metaDescription: Style Guide for torstenknabe.com
 date: 2021-11-13T23:00:00.000Z
 permalink: /styles/index.html
 eleventyExcludeFromCollections: true
-# eleventyNavigation:
-#   key: Style
-#   order: 0
+description: Style Guide for torstenknabe.com. Shows all different renderings of
+  types of content and how they are styled.
+eleventyNavigation:
+  order: -1
+  key: none
 ---
 ## Heading 1{.h2}
+
 ## Heading 2
+
 ### Heading 3
+
 #### Heading 4
+
 ##### Heading 5
+
 ###### Heading 6
 
-This is normal paragraph text. [This is a hyperlink](/styles). 
+This is normal paragraph text. [This is a hyperlink](/styles). *This is italicized text.* **This is bolded text. *This is italicized and bolded text.***
 
-Torsten Knabe is a developer and problem solver at Fireside21. He currently is a support engineer who helps clients by triaging bugs and making database changes to their CRM. Prior to that role Torsten was on the Web Team building official websites for members of congress. He was previously a legislative aide in the Maryland General Assembly for then Delegate now [Senator Mary Washington](https://www.senatormarywashington.com/) managing both the legislative agenda and constituent responses for the small office. Prior to the Maryland legislature, Torsten interned in the US House of Representatives and in the US Senate as a part of the [Victory Congressional Internship program](https://victoryinstitute.org/programs/victory-congressional-internship/).
-\
-He’s passionate about open responsive government, user interaction and experience, and accessibility #a11y. Originally from Texas, Torsten now lives in Washington, DC and is an avid cyclist and train enthusiast living near the largest train station in the city. In his spare time he enjoys tabletop games, twitch, the oxford comma, and linux.
+1. This is an ordered list
+2. This is another item in an ordered list
+
+* This is an unordered list
+* This is another item in an unordered list
+
+> This is a blockquote.
+
+`This is code`
+
+```html
+<p>This is a code block with HTML syntax highlighting.</p>
+```
