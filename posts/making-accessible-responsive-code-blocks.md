@@ -5,9 +5,9 @@ author: Torsten Knabe
 summary: I added code blocks to my site with markdown but I had to figure out
   how to make them responsive and accessible.
 tags:
-  - eleventy
-  - markdown
-  - a11y
+  - Eleventy
+  - Markdown
+  - A11y
   - JavaScript
   - HTML  
   - CSS
