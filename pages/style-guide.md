@@ -10,7 +10,7 @@ eleventyNavigation:
   order: -1
   key: none
 ---
-## Heading 1{.h2}
+## Heading 1{.h1}
 
 ## Heading 2
 
