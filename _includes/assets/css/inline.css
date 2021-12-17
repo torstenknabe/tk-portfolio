@@ -163,7 +163,7 @@ h3 {
 	color: var(--primary-purple);
 }
 
-.int iframe[href*="youtu"] {
+.int iframe[src*="youtu"] {
 	width: 100%;
 	height: auto;
 	aspect-ratio: 16 / 9;
