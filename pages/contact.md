@@ -1,6 +1,6 @@
 ---
 layout: layouts/contact.njk
-title: Get in touch
+title: Get in Touch
 metaDescription: Contact Torsten Knabe. You can use the contact form on this site or send him an email.
 section: contact
 date: 2021-06-16T16:00:00.000Z

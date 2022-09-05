@@ -7,12 +7,12 @@ section: contact
 	<div class="hero-container">
 		<h1 class="title-text"><span class="text-holder">{{ title }}</span></h1>
 	</div>
-	<div class="base-section portfolio-intro">
-		<div class="container">
-			{{ layoutContent | safe }}
+	<section class="base-section">
+		<div class="portfolio-intro">
+			<div class="container">
+				{{ layoutContent | safe }}
+			</div>
 		</div>
-	</div>
-	<div class="base-section">
 		<div class="container">
 			<h2 class="title-text"><span class="text-holder">Landing Pages</span></h2>
 			<article class="portfolio-section">
@@ -58,11 +58,16 @@ section: contact
 				<a class="btn secondary" href="https://speakerjones.com/">View Page<span class="visually-hidden"> - Crystal Gems Card game</span></a>
 			</article>
 		</div>
+	</section>
+	<svg role="decorative" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+		<path fill="var(--primary-yellow)" fill-opacity="1" d="M0,256L30,256C60,256,120,256,180,240C240,224,300,192,360,192C420,192,480,224,540,208C600,192,660,128,720,128C780,128,840,192,900,202.7C960,213,1020,171,1080,170.7C1140,171,1200,213,1260,218.7C1320,224,1380,192,1410,176L1440,160L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z"></path>
+	</svg>
+	<section class="base-section">
 		<div class="portfolio-stats">
 			<div class="container">
 				<h2 class="title-text"><span class="text-holder">Tools Used</span></h2>
 				<p>This is a graph</p>
 			</div>
 		</div>
-	</div>
+	</section>
 </main>
