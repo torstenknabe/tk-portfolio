@@ -1366,6 +1366,7 @@ pre code {
 .user-toggle .title-text::after {
 	background-color: var(--primary-orange);
 	box-shadow: none;
+	transition: transform 2s;
 }
 
 .user-toggle .text-holder {
@@ -1380,6 +1381,10 @@ pre code {
 
 .user-toggle button:hover {
 	cursor: pointer;
+}
+
+.user-toggle button span:focus {
+	outline: none;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -1483,101 +1488,101 @@ pre code {
 }
 
 [data-user-color-scheme='dark'] {
-		--darkmode-purple: #D978CE;
-		--darkmode-primary-green: #88D56C;
-		--darkmode-secondary-green: #53AF31;
-		--primary-orange: #4E3818;
-		--secondary-orange: #CCA260;
-		--primary-yellow: #244D15;
-		--darkmode-blue: #6FA0C8;
-	}
-	[data-user-color-scheme='dark'] *:focus,
-	.nav li a:focus,
-	.skip-link:focus {
-		outline-color: var(--light-color);
-	}
+	--darkmode-purple: #D978CE;
+	--darkmode-primary-green: #88D56C;
+	--darkmode-secondary-green: #53AF31;
+	--primary-orange: #4E3818;
+	--secondary-orange: #CCA260;
+	--primary-yellow: #244D15;
+	--darkmode-blue: #6FA0C8;
+}
+[data-user-color-scheme='dark'] *:focus,
+[data-user-color-scheme='dark'] .nav li a:focus,
+[data-user-color-scheme='dark'] .skip-link:focus {
+	outline-color: var(--light-color);
+}
 
-	[data-user-color-scheme='dark'] body {
-		color: var(--light-color);
-	}
-	[data-user-color-scheme='dark'] a,
-	[data-user-color-scheme='dark'] .writing a {
-		color: var(--darkmode-primary-green);
-	}
-	[data-user-color-scheme='dark'] .writing a:visited {
-		color: var(--darkmode-secondary-green);
-	}
-	[data-user-color-scheme='dark'] .paintdrop a {
-		color: var(--light-color);
-	}
-	[data-user-color-scheme='dark'] input, 
-	[data-user-color-scheme='dark'] textarea {
-		background-color: var(--body-color);
-		color: var(--light-color);
-	}
-	[data-user-color-scheme='dark'] code {
-		color: var(--light-color);
-		background-color: var(--primary-red);
-	}
-	[data-user-color-scheme='dark'].btn:hover, 
-	[data-user-color-scheme='dark'] .btn:focus {
-		border-color: var(--body-color);
-		background: var(--body-color);
-		color: var(--darkmode-blue);
-	}
-	[data-user-color-scheme='dark']	.user-toggle .title-text::after {
-		transform: translate(-50%) skew(45deg);
-	}
-	[data-user-color-scheme='dark'] .main-content {
-		background-color: var(--body-color);
-	}
-	[data-user-color-scheme='dark'] .paintdrop a:visited {
-		color: var(--light-color);
-	}
-	[data-user-color-scheme='dark'] .js .side-nav .nav-btn:focus, 
-	[data-user-color-scheme='dark'] .js .side-nav .nav-btn:hover,
-	[data-user-color-scheme='dark'] .paintdrop-box:first-child {
-		border-color: var(--light-color);
-	}
-	[data-user-color-scheme='dark'] .icons svg {
-		--primary-purple: #D978CE;
-	}
-	[data-user-color-scheme='dark'] .top8 a,
-	[data-user-color-scheme='dark'] .top8 a:hover {
-		color: var(--darkmode-blue);
-	}
-	[data-user-color-scheme='dark'] .top8 a:hover .top8-img,
-	[data-user-color-scheme='dark'] .top8-img {
-		border-color: var(--darkmode-blue);
-	}
-	[data-user-color-scheme='dark'] .top8 .tiktok h3::before {
-		content: url(/static/img/tiktok-light.svg);
-	}
-	[data-user-color-scheme='dark'] .top8 .twitch h3::before {
-		content: url(/static/img/twitch-light.svg);
-	}
-	[data-user-color-scheme='dark'] .top8 .instagram h3::before {
-		content: url(/static/img/instagram-light.svg);
-	}
-	[data-user-color-scheme='dark'] .int .blog a,
-	[data-user-color-scheme='dark'] .int .blog a:visited {
-		color: var(--light-color);
-	}
-	[data-user-color-scheme='dark'] .int .blog article {
-		border-bottom-color: var(--light-color);
-	}
-	[data-user-color-scheme='dark'] .int .h1,
-	[data-user-color-scheme='dark'] .int h2,
-	[data-user-color-scheme='dark'] .int .h2,
-	[data-user-color-scheme='dark'] .int h3 {
-		color: var(--darkmode-purple);
-	}
-	[data-user-color-scheme='dark'] .portfolio .title-text {
-		color: var(--light-color);
-	}
-	[data-user-color-scheme='dark'] .portfolio-section {
-		background-color: var(--body-color);
-	}
-	[data-user-color-scheme='dark'] .portfolio-stats {
-		background-color: var(--body-color);
-	}
+[data-user-color-scheme='dark'] body {
+	color: var(--light-color);
+}
+[data-user-color-scheme='dark'] a,
+[data-user-color-scheme='dark'] .writing a {
+	color: var(--darkmode-primary-green);
+}
+[data-user-color-scheme='dark'] .writing a:visited {
+	color: var(--darkmode-secondary-green);
+}
+[data-user-color-scheme='dark'] .paintdrop a {
+	color: var(--light-color);
+}
+[data-user-color-scheme='dark'] input, 
+[data-user-color-scheme='dark'] textarea {
+	background-color: var(--body-color);
+	color: var(--light-color);
+}
+[data-user-color-scheme='dark'] code {
+	color: var(--light-color);
+	background-color: var(--primary-red);
+}
+[data-user-color-scheme='dark'].btn:hover, 
+[data-user-color-scheme='dark'] .btn:focus {
+	border-color: var(--body-color);
+	background: var(--body-color);
+	color: var(--darkmode-blue);
+}
+[data-user-color-scheme='dark']	.user-toggle .title-text::after {
+	transform: translate(-50%) skew(45deg);
+}
+[data-user-color-scheme='dark'] .main-content {
+	background-color: var(--body-color);
+}
+[data-user-color-scheme='dark'] .paintdrop a:visited {
+	color: var(--light-color);
+}
+[data-user-color-scheme='dark'] .js .side-nav .nav-btn:focus, 
+[data-user-color-scheme='dark'] .js .side-nav .nav-btn:hover,
+[data-user-color-scheme='dark'] .paintdrop-box:first-child {
+	border-color: var(--light-color);
+}
+[data-user-color-scheme='dark'] .icons svg {
+	--primary-purple: #D978CE;
+}
+[data-user-color-scheme='dark'] .top8 a,
+[data-user-color-scheme='dark'] .top8 a:hover {
+	color: var(--darkmode-blue);
+}
+[data-user-color-scheme='dark'] .top8 a:hover .top8-img,
+[data-user-color-scheme='dark'] .top8-img {
+	border-color: var(--darkmode-blue);
+}
+[data-user-color-scheme='dark'] .top8 .tiktok h3::before {
+	content: url(/static/img/tiktok-light.svg);
+}
+[data-user-color-scheme='dark'] .top8 .twitch h3::before {
+	content: url(/static/img/twitch-light.svg);
+}
+[data-user-color-scheme='dark'] .top8 .instagram h3::before {
+	content: url(/static/img/instagram-light.svg);
+}
+[data-user-color-scheme='dark'] .int .blog a,
+[data-user-color-scheme='dark'] .int .blog a:visited {
+	color: var(--light-color);
+}
+[data-user-color-scheme='dark'] .int .blog article {
+	border-bottom-color: var(--light-color);
+}
+[data-user-color-scheme='dark'] .int .h1,
+[data-user-color-scheme='dark'] .int h2,
+[data-user-color-scheme='dark'] .int .h2,
+[data-user-color-scheme='dark'] .int h3 {
+	color: var(--darkmode-purple);
+}
+[data-user-color-scheme='dark'] .portfolio .title-text {
+	color: var(--light-color);
+}
+[data-user-color-scheme='dark'] .portfolio-section {
+	background-color: var(--body-color);
+}
+[data-user-color-scheme='dark'] .portfolio-stats {
+	background-color: var(--body-color);
+}
