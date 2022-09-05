@@ -1220,7 +1220,8 @@ pre code {
 
 	.js .side-nav .logo, 
 	.js .side-nav .styled-list,
-	.js .side-nav .social-nav {
+	.js .side-nav .social-nav,
+	.js .side-nav .user-toggle {
 		display: none;
 	}
 
@@ -1279,7 +1280,8 @@ pre code {
 
 	.js .open-nav .side-nav .logo, 
 	.js .open-nav .side-nav .styled-list,
-	.js .open-nav .side-nav .social-nav {
+	.js .open-nav .side-nav .social-nav,
+	.js .open-nav .side-nav .user-toggle {
 		display: block;
 	}
 
