@@ -1396,86 +1396,88 @@ pre code {
 		--primary-yellow: #244D15;
 		--darkmode-blue: #6FA0C8;
 	}
-	*:focus,
-	.nav li a:focus,
-	.skip-link:focus {
+	html:not([data-user-color-scheme]) *:focus,
+	html:not([data-user-color-scheme]) .nav li a:focus,
+	html:not([data-user-color-scheme]) .skip-link:focus {
 		outline-color: var(--light-color);
 	}
 
-	body {
+	html:not([data-user-color-scheme]) body {
 		color: var(--light-color);
 	}
-	a,
-	.writing a {
+	html:not([data-user-color-scheme]) a,
+	html:not([data-user-color-scheme]) .writing a {
 		color: var(--darkmode-primary-green);
 	}
-	a:visited {
+	html:not([data-user-color-scheme]) a:visited {
 		color: var(--darkmode-secondary-green);
 	}
-	input, textarea {
+	html:not([data-user-color-scheme]) input, 
+	html:not([data-user-color-scheme]) textarea {
 		background-color: var(--body-color);
 		color: var(--light-color);
 	}
-	code {
+	html:not([data-user-color-scheme]) code {
 		color: var(--light-color);
 		background-color: var(--primary-red);
 	}
-	.btn:hover, .btn:focus {
+	html:not([data-user-color-scheme]) .btn:hover,
+	html:not([data-user-color-scheme]) .btn:focus {
 		border-color: var(--body-color);
 		background: var(--body-color);
 		color: var(--darkmode-blue);
 	}
-	.user-toggle .title-text::after {
+	html:not([data-user-color-scheme]) .user-toggle .title-text::after {
 		transform: translate(-50%) skew(45deg);
 	}
-	.main-content {
+	html:not([data-user-color-scheme]) .main-content {
 		background-color: var(--body-color);
 	}
-	.paintdrop a:visited {
+	html:not([data-user-color-scheme]) .paintdrop a:visited {
 		color: var(--light-color);
 	}
-	.js .side-nav .nav-btn:focus, 
-	.js .side-nav .nav-btn:hover,
-	.paintdrop-box:first-child {
+	html:not([data-user-color-scheme]) .js .side-nav .nav-btn:focus, 
+	html:not([data-user-color-scheme]) .js .side-nav .nav-btn:hover,
+	html:not([data-user-color-scheme]) .paintdrop-box:first-child {
 		border-color: var(--light-color);
 	}
-	.icons svg {
+	html:not([data-user-color-scheme]) .icons svg {
 		--primary-purple: #D978CE;
 	}
-	.top8 a,
-	.top8 a:hover {
+	html:not([data-user-color-scheme]) .top8 a,
+	html:not([data-user-color-scheme]) .top8 a:hover {
 		color: var(--darkmode-blue);
 	}
-	.top8 a:hover .top8-img,
-	.top8-img {
+	html:not([data-user-color-scheme]) .top8 a:hover .top8-img,
+	html:not([data-user-color-scheme]) .top8-img {
 		border-color: var(--darkmode-blue);
 	}
-	.top8 .tiktok h3::before {
+	html:not([data-user-color-scheme]) .top8 .tiktok h3::before {
 		content: url(/static/img/tiktok-light.svg);
 	}
-	.top8 .twitch h3::before {
+	html:not([data-user-color-scheme]) .top8 .twitch h3::before {
 		content: url(/static/img/twitch-light.svg);
 	}
-	.top8 .instagram h3::before {
+	html:not([data-user-color-scheme]) .top8 .instagram h3::before {
 		content: url(/static/img/instagram-light.svg);
 	}
-	.int .blog a,
-	.int .blog a:visited {
+	html:not([data-user-color-scheme]) .int .blog a,
+	html:not([data-user-color-scheme]) .int .blog a:visited {
 		color: var(--light-color);
 	}
-	.int .blog article {
+	html:not([data-user-color-scheme]) .int .blog article {
 		border-bottom-color: var(--light-color);
 	}
-	.int .h1,
-	.int h2,
-	.int .h2,
-	.int h3 {
+	html:not([data-user-color-scheme]) .int .h1,
+	html:not([data-user-color-scheme]) .int h2,
+	html:not([data-user-color-scheme]) .int .h2,
+	html:not([data-user-color-scheme]) .int h3 {
 		color: var(--darkmode-purple);
 	}
-	.portfolio-section {
+	html:not([data-user-color-scheme]) .portfolio-section {
 		background-color: var(--body-color);
 	}
-	.portfolio-stats {
+	html:not([data-user-color-scheme]) .portfolio-stats {
 		background-color: var(--body-color);
 	}
 }
