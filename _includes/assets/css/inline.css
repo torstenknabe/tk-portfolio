@@ -1505,6 +1505,9 @@ pre code {
 	[data-user-color-scheme='dark'] .writing a:visited {
 		color: var(--darkmode-secondary-green);
 	}
+	[data-user-color-scheme='dark'] .paintdrop a {
+		color: var(--light-color);
+	}
 	[data-user-color-scheme='dark'] input, 
 	[data-user-color-scheme='dark'] textarea {
 		background-color: var(--body-color);
