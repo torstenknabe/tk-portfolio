@@ -1273,6 +1273,18 @@ pre code {
 		position: static;
 	}
 
+	html:not([data-user-color-scheme]) .side-nav .nav-btn:focus,
+	[data-user-color-scheme='dark'] .side-nav .nav-btn:focus {
+		border-color: var(--light-color);
+	}
+
+	@media (prefers-color-scheme: dark) {
+		html:not([data-user-color-scheme]) .side-nav .nav-btn:focus,
+		html:not([data-user-color-scheme]) .side-nav .nav-btn:hover {
+			border-color: var(--light-color);
+		}
+	}
+
 	.js .header-holder {
 		will-change: initial;
 		position: static;
