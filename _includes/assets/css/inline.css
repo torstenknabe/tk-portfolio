@@ -1256,7 +1256,7 @@ pre code {
 		font-size:  1.5rem;
 		font-family: var(--header-font);
 		will-change: transform;
-		transition: border .3s ease-in-out background-color .3s ease-in-out;
+		transition: border .3s ease-in-out, background-color .3s ease-in-out;
 		z-index: 99;
 		border-radius: 50%;
 		box-shadow: 5px 5px 20px 1px rgba(0, 0, 0, 0.3);
@@ -1430,7 +1430,7 @@ pre code {
 	}
 	html:not([data-user-color-scheme]) a:visited {
 		color: var(--light-color);
-		
+
 	}
 	html:not([data-user-color-scheme]) input, 
 	html:not([data-user-color-scheme]) textarea {
