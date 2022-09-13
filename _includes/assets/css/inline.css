@@ -1429,7 +1429,8 @@ pre code {
 		color: var(--light-color);
 	}
 	html:not([data-user-color-scheme]) a:visited {
-		color: var(--darkmode-secondary-green);
+		color: var(--light-color);
+		
 	}
 	html:not([data-user-color-scheme]) input, 
 	html:not([data-user-color-scheme]) textarea {
