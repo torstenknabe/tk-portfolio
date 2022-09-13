@@ -1426,7 +1426,7 @@ pre code {
 	}
 	html:not([data-user-color-scheme]) a,
 	html:not([data-user-color-scheme]) .writing a {
-		color: var(--darkmode-primary-green);
+		color: var(--light-color);
 	}
 	html:not([data-user-color-scheme]) a:visited {
 		color: var(--darkmode-secondary-green);
