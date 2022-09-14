@@ -1304,7 +1304,7 @@ pre code {
 	.js .open-nav .header-holder {
 		position: relative;
 		height: calc(100vh - 2rem);
-		padding: 1rem 0;
+		padding: 1rem 0 8rem;
 	}
 
 	.js .open-nav .side-nav {
