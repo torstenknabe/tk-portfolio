@@ -13,3 +13,4 @@ tags:
 
   * Alternatively I may aim for contributing to the Netlfiy CMS project, although I looked into it and it's [quite complicated](https://github.com/netlify/netlify-cms/issues/2557) to make everything responsive.
 * I have intentionally added as little client side JS as I can, and made design decisions to enforce that (limiting animation to just CSS for example). The majority of the site logic is CSS, with a single media breakpoint.
+* On mobile the navigation button is on the lower left because I'm left handed. I'm tired of always having to reach to the bottom right hand corner on other sites.
