@@ -1447,6 +1447,11 @@ pre code {
 		background: var(--body-color);
 		color: var(--darkmode-blue);
 	}
+	html:not([data-user-color-scheme]) .portfolio .btn:hover,
+	html:not([data-user-color-scheme]) .portfolio .btn:focus {
+		border-color: var(--primary-purple);
+		color: var(--light-color);
+	}
 	html:not([data-user-color-scheme]) .user-toggle .title-text::after {
 		transform: translate(-50%) skew(45deg);
 	}
@@ -1455,6 +1460,14 @@ pre code {
 	}
 	html:not([data-user-color-scheme]) .paintdrop a:visited {
 		color: var(--light-color);
+	}
+	html:not([data-user-color-scheme]) .portfolio a,
+	html:not([data-user-color-scheme]) .portfolio a:visited
+	 {
+		color: var(--light-color);
+	}
+	html:not([data-user-color-scheme]) .portfolio .btn.secondary:hover {
+		background-color: transparent;
 	}
 	html:not([data-user-color-scheme]) .js .side-nav .nav-btn:focus, 
 	html:not([data-user-color-scheme]) .js .side-nav .nav-btn:hover,
@@ -1494,6 +1507,9 @@ pre code {
 	html:not([data-user-color-scheme]) .int h3 {
 		color: var(--darkmode-purple);
 	}
+	html:not([data-user-color-scheme]) .portfolio .title-text {
+	color: var(--light-color);
+	}
 	html:not([data-user-color-scheme]) .portfolio-section {
 		background-color: var(--body-color);
 	}
@@ -1527,8 +1543,14 @@ pre code {
 [data-user-color-scheme='dark'] .writing a:visited {
 	color: var(--darkmode-secondary-green);
 }
-[data-user-color-scheme='dark'] .paintdrop a {
+[data-user-color-scheme='dark'] .paintdrop a,
+[data-user-color-scheme='dark'] .portfolio a,
+[data-user-color-scheme='dark'] .portfolio a:visited
+ {
 	color: var(--light-color);
+}
+[data-user-color-scheme='dark'] .portfolio .btn.secondary:hover {
+	background-color: transparent;
 }
 [data-user-color-scheme='dark'] input, 
 [data-user-color-scheme='dark'] textarea {
@@ -1545,6 +1567,11 @@ pre code {
 	background: var(--body-color);
 	color: var(--darkmode-blue);
 }
+[data-user-color-scheme='dark'] .portfolio .btn:hover,
+[data-user-color-scheme='dark'] .portfolio .btn:focus {
+		border-color: var(--primary-purple);
+		color: var(--light-color);
+	}
 [data-user-color-scheme='dark']	.user-toggle .title-text::after {
 	transform: translate(-50%) skew(45deg);
 }
