@@ -437,6 +437,12 @@ textarea {
 	outline-color: var(--primary-orange);
 }
 
+#main-nav {
+	margin: 0 auto;
+	text-align: left;
+	width: max-content;
+}
+
 .social-nav {
 	margin-top: 2rem;
 	border-top: 4px solid var(--light-color);
