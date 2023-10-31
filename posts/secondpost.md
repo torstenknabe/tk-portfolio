@@ -10,6 +10,7 @@ tags:
   - Programming
   - JavaScript
   - HTML
+  - post
 ---
 On the footer of this site you may see that I have my email address available. I want people to be able to contact me, but I don't want my email address swept up by bots. Many bots parse through HTML documents to steal email addresses and then use them for nefarious purposes. Fortunately, many of these bots don't/can't load JavaScript on a page they're scanning. As such, if I insert my email into the DOM with JS, then I have less to worry about for bots scraping pages.
 

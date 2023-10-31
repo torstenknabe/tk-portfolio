@@ -7,6 +7,7 @@ summary: Happy Holidays and Merry Christmas. Wishing you a meaningful 2022
 tags:
   - piano
   - music
+  - post
 ---
 <iframe src="https://www.youtube.com/embed/3RJ-yfcsevA" title="Merry Christmas Youtube Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 

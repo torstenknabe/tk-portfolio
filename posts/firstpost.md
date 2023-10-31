@@ -10,6 +10,7 @@ summary: I follow an awesome graphic designer on tiktok who inspired me to make
 tags:
   - Portfolio
   - Design
+  - post
 ---
 Logos are such a simple and effective statement to show off who you are. I've always been interested in logo design and what goes into it. I've had the benefit of working with professional graphic designers at Fireside21 and seeing the process in action. Many times we'll start with an abstract statement of goals for the logo and inspiration. Then we'll do a call that goes over the specifics - for example, this committee covers these 3 main issue areas and so we need to incorporate something from all of those. The designers will then come up with multiple different concepts driven by that conversation. They might be literal - icons for specific topics, or they might be more abstract with shapes that evoke an idea without explicitly using that iconography. Then we have to work with the relevant stakeholders and get their sign off.
 

@@ -6,6 +6,7 @@ summary: My mom has Alzheimer's and I've compiled a list of things I've done to
   help make the day to day experience a little easier.
 tags:
   - alzheimers
+  - post
 ---
 My mom has Alzheimer's. Fortunately/unfortunately her dad had Lewy Body Dementia from Parkinsons which presents with many of the same symptoms so I've been through this before. I've written up this post with what we've done so far to make our lives a little bit easier so that it might help somebody else in a similar situation.
 

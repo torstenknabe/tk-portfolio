@@ -5,6 +5,7 @@ author: Torsten Knabe
 summary: What tools I've used to build this site.
 tags:
   - blog
+  - post
 ---
 * This site is built with [Eleventy](https://www.11ty.dev/) and hosted on [Netlify](https://www.netlify.com/).
 * This means that the whole site is static and compiled at build time. This keeps it [lightening fast and performant](https://www.11ty.dev/speedlify/torstenknabe-com/).

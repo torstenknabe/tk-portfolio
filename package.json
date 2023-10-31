@@ -32,6 +32,7 @@
   },
   "dependencies": {
     "@11ty/eleventy-navigation": "^0.1.6",
+    "@11ty/eleventy-plugin-rss": "^1.2.0",
     "clean-css": "^4.2.1",
     "html-minifier": "^4.0.0",
     "n": "^7.2.2",

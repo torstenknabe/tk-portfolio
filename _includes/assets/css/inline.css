@@ -219,7 +219,7 @@ a:hover {
   position: absolute;
   width: 1px;
   white-space: nowrap;
-  left: -9999px;
+  /*left: -9999px;*/
 }
 
 .important {

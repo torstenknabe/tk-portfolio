@@ -6,6 +6,7 @@ summary: Can you hear? This site does something unique for the HTML order and
   screen readers.
 tags:
   - a11y
+  - post
 ---
 I want this site to be perfectly accessible and a joy to use on screen readers. To that end I've tested on screen readers (NVDA, VoiceOver, and TalkBack) and it sounds good to me. However, I am not a native screen reader user so I absolutely will miss something. Unfortunately I don't have a budget to do user testing for my personal site. If someone is using a screen reader to access my site and finds a problem please fill out the contact form on this page to let me know.
 

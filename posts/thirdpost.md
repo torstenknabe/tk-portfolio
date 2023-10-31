@@ -9,6 +9,7 @@ tags:
   - CSS
   - Design
   - Portfolio
+  - post
 ---
 Now that I had a logo design sketched out on paper that I liked, it was time to translate that into code. I quickly decided on using SVG. SVG allows for infinite scaling, easy use in other contexts like print, and lends itself easily to animation. Trying to draw my logo with HTML and CSS seemed like a mess of ugly divs, and unresponsive code.
 
