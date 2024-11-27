@@ -94,7 +94,6 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("static/img");
   eleventyConfig.addPassthroughCopy("admin");
   eleventyConfig.addPassthroughCopy("_includes/assets/");
-
   // Added CSS to markdown following instructions here: https://dev.to/iarehilton/11ty-markdown-attributes-2dl3
   eleventyConfig.addPassthroughCopy("css");
   /* Markdown Plugins */

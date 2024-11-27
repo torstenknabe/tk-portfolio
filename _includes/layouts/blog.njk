@@ -10,7 +10,7 @@ permalink: /blog/index.html
 	</div>
 		<section class="base-section content blog">
 			<div class="container">
-				{{ layoutContent | safe }}
+				{{ content | safe }}
 
 				{% set postslist = collections.post %}
 				{% include "components/postslist.njk" %}
