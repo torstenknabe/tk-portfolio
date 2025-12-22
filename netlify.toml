@@ -17,9 +17,9 @@
 # Redirect rule example
 # For more information see:- https://www.netlify.com/docs/netlify-toml-reference/
 
-#[[redirects]]
-#  from = "/*"
-#  to = "/blog/:splat"
+[[redirects]]
+  from = "/NYE2026"
+  to = "/posts/nye-2026"
 
 # The default HTTP status code is 301, but you can define a different one e.g.
 # status = 302
